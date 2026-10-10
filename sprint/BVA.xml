@@ -1,0 +1,16 @@
+<suite name="BVA Suite">
+	<test name="BVATests">
+		<groups>
+			<run>
+				<include name="BVA"/>
+			</run>
+	</groups>
+		<packages>
+			<package name="Homepage"/>
+			<package name="Login"/>
+			<package name="Product"/>
+			<package name="AddCart"/>
+			<package name="ContactCommunity"/>
+		</packages>
+	</test>
+</suite>

@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="42" total="47" passed="5" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Swag Labs test suite started]]>
+    </line>
+    <line>
+      <![CDATA[Test execution started]]>
+    </line>
+    <line>
+      <![CDATA[Test class: LoginNegativeTest]]>
+    </line>
+    <line>
+      <![CDATA[Browser launched: chrome]]>
+    </line>
+    <line>
+      <![CDATA[Application opened: https://www.saucedemo.com/]]>
+    </line>
+    <line>
+      <![CDATA[Invalid credential validation completed]]>
+    </line>
+    <line>
+      <![CDATA[Negative test screenshot: C:\Users\Admin\eclipse-workspace\sprint\Screenshots\verifyInvalidCredentialsShowError_20261010_115646.png]]>
+    </line>
+    <line>
+      <![CDATA[Browser launched: chrome]]>
+    </line>
+    <line>
+      <![CDATA[Application opened: https://www.saucedemo.com/]]>
+    </line>
+    <line>
+      <![CDATA[Locked user validation completed]]>
+    </line>
+    <line>
+      <![CDATA[Negative test screenshot: C:\Users\Admin\eclipse-workspace\sprint\Screenshots\verifyLockedUserCannotLogin_20261010_115649.png]]>
+    </line>
+    <line>
+      <![CDATA[Test class completed: LoginNegativeTest]]>
+    </line>
+    <line>
+      <![CDATA[Test class: ProductNegativeTest]]>
+    </line>
+    <line>
+      <![CDATA[Browser launched: chrome]]>
+    </line>
+    <line>
+      <![CDATA[Application opened: https://www.saucedemo.com/]]>
+    </line>
+    <line>
+      <![CDATA[Unauthorized Product access was blocked]]>
+    </line>
+    <line>
+      <![CDATA[Negative test screenshot: C:\Users\Admin\eclipse-workspace\sprint\Screenshots\verifyUnauthorizedUserCannotAccessProducts_20261010_115651.png]]>
+    </line>
+    <line>
+      <![CDATA[Test class completed: ProductNegativeTest]]>
+    </line>
+    <line>
+      <![CDATA[Test class: PurchaseNegativeTest]]>
+    </line>
+    <line>
+      <![CDATA[Browser launched: chrome]]>
+    </line>
+    <line>
+      <![CDATA[Application opened: https://www.saucedemo.com/]]>
+    </line>
+    <line>
+      <![CDATA[Mandatory checkout validation passed]]>
+    </line>
+    <line>
+      <![CDATA[Negative test screenshot: C:\Users\Admin\eclipse-workspace\sprint\Screenshots\verifyCheckoutRequiresMandatoryData_20261010_115655.png]]>
+    </line>
+    <line>
+      <![CDATA[Test class completed: PurchaseNegativeTest]]>
+    </line>
+    <line>
+      <![CDATA[Test class: ContactCommunityNegativeTest]]>
+    </line>
+    <line>
+      <![CDATA[Browser launched: chrome]]>
+    </line>
+    <line>
+      <![CDATA[Application opened: https://www.saucedemo.com/]]>
+    </line>
+    <line>
+      <![CDATA[Invalid footer destinations were rejected successfully]]>
+    </line>
+    <line>
+      <![CDATA[Negative test screenshot: C:\Users\Admin\eclipse-workspace\sprint\Screenshots\verifyInvalidFooterDestinationIsRejected_20261010_115658.png]]>
+    </line>
+    <line>
+      <![CDATA[Test class completed: ContactCommunityNegativeTest]]>
+    </line>
+    <line>
+      <![CDATA[Test execution completed]]>
+    </line>
+    <line>
+      <![CDATA[=== Swag Labs test suite completed ===]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-10-10T11:56:40 IST" name="Negative Suite" finished-at="2026-10-10T11:56:58 IST" duration-ms="17972">
+    <groups>
+      <group name="Negative">
+        <method signature="PurchaseNegativeTest.verifyCheckoutRequiresMandatoryData()[pri:0, instance:AddCart.PurchaseNegativeTest@5fb759d6]" name="verifyCheckoutRequiresMandatoryData" class="AddCart.PurchaseNegativeTest"/>
+        <method signature="ContactCommunityNegativeTest.verifyInvalidFooterDestinationIsRejected()[pri:0, instance:ContactCommunity.ContactCommunityNegativeTest@15888343]" name="verifyInvalidFooterDestinationIsRejected" class="ContactCommunity.ContactCommunityNegativeTest"/>
+        <method signature="LoginNegativeTest.verifyInvalidCredentialsShowError()[pri:0, instance:Login.LoginNegativeTest@338fc1d8]" name="verifyInvalidCredentialsShowError" class="Login.LoginNegativeTest"/>
+        <method signature="LoginNegativeTest.verifyLockedUserCannotLogin()[pri:0, instance:Login.LoginNegativeTest@338fc1d8]" name="verifyLockedUserCannotLogin" class="Login.LoginNegativeTest"/>
+        <method signature="ProductNegativeTest.verifyUnauthorizedUserCannotAccessProducts()[pri:0, instance:Product.ProductNegativeTest@f1da57d]" name="verifyUnauthorizedUserCannotAccessProducts" class="Product.ProductNegativeTest"/>
+      </group> <!-- Negative -->
+    </groups>
+    <test started-at="2026-10-10T11:56:40 IST" name="NegativeTests" finished-at="2026-10-10T11:56:58 IST" duration-ms="17972">
+      <class name="ContactCommunity.ContactCommunityNegativeTest">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ContactCommunity.ContactCommunityNegativeTest@15888343]" started-at="2026-10-10T11:56:55 IST" name="beforeClass" finished-at="2026-10-10T11:56:55 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test class: ContactCommunityNegativeTest]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:ContactCommunity.ContactCommunityNegativeTest@15888343]" started-at="2026-10-10T11:56:55 IST" name="launchApplication" finished-at="2026-10-10T11:56:57 IST" duration-ms="1657" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Browser launched: chrome]]>
+            </line>
+            <line>
+              <![CDATA[Application opened: https://www.saucedemo.com/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="verifyInvalidFooterDestinationIsRejected()[pri:0, instance:ContactCommunity.ContactCommunityNegativeTest@15888343]" started-at="2026-10-10T11:56:57 IST" name="verifyInvalidFooterDestinationIsRejected" finished-at="2026-10-10T11:56:58 IST" duration-ms="933" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Invalid footer destinations were rejected successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidFooterDestinationIsRejected -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:ContactCommunity.ContactCommunityNegativeTest@15888343]" started-at="2026-10-10T11:56:58 IST" name="afterMethod" finished-at="2026-10-10T11:56:58 IST" duration-ms="533" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyInvalidFooterDestinationIsRejected status=SUCCESS method=ContactCommunityNegativeTest.verifyInvalidFooterDestinationIsRejected()[pri:0, instance:ContactCommunity.ContactCommunityNegativeTest@15888343] output=Invalid footer destinations were rejected successfully]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Negative test screenshot: C:\Users\Admin\eclipse-workspace\sprint\Screenshots\verifyInvalidFooterDestinationIsRejected_20261010_115658.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:ContactCommunity.ContactCommunityNegativeTest@15888343]" started-at="2026-10-10T11:56:58 IST" name="afterClass" finished-at="2026-10-10T11:56:58 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test class completed: ContactCommunityNegativeTest]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- ContactCommunity.ContactCommunityNegativeTest -->
+      <class name="Login.LoginBVATest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:Login.LoginBVATest@5f8e8a9d]" started-at="2026-10-10T11:56:40 IST" name="beforeSuite" finished-at="2026-10-10T11:56:40 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Swag Labs test suite started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Login.LoginBVATest@5f8e8a9d]" started-at="2026-10-10T11:56:40 IST" name="beforeTest" finished-at="2026-10-10T11:56:40 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test execution started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:Login.LoginBVATest@5f8e8a9d]" started-at="2026-10-10T11:56:58 IST" name="afterTest" finished-at="2026-10-10T11:56:58 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test execution completed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Login.LoginBVATest@5f8e8a9d]" started-at="2026-10-10T11:56:58 IST" name="afterSuite" finished-at="2026-10-10T11:56:58 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[=== Swag Labs test suite completed ===]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- Login.LoginBVATest -->
+      <class name="Product.ProductNegativeTest">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Product.ProductNegativeTest@f1da57d]" started-at="2026-10-10T11:56:50 IST" name="beforeClass" finished-at="2026-10-10T11:56:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test class: ProductNegativeTest]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:Product.ProductNegativeTest@f1da57d]" started-at="2026-10-10T11:56:50 IST" name="launchApplication" finished-at="2026-10-10T11:56:51 IST" duration-ms="1700" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Browser launched: chrome]]>
+            </line>
+            <line>
+              <![CDATA[Application opened: https://www.saucedemo.com/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="verifyUnauthorizedUserCannotAccessProducts()[pri:0, instance:Product.ProductNegativeTest@f1da57d]" started-at="2026-10-10T11:56:51 IST" name="verifyUnauthorizedUserCannotAccessProducts" finished-at="2026-10-10T11:56:51 IST" duration-ms="251" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Unauthorized Product access was blocked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyUnauthorizedUserCannotAccessProducts -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:Product.ProductNegativeTest@f1da57d]" started-at="2026-10-10T11:56:51 IST" name="afterMethod" finished-at="2026-10-10T11:56:52 IST" duration-ms="307" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUnauthorizedUserCannotAccessProducts status=SUCCESS method=ProductNegativeTest.verifyUnauthorizedUserCannotAccessProducts()[pri:0, instance:Product.ProductNegativeTest@f1da57d] output=Unauthorized Product access was blocked]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Negative test screenshot: C:\Users\Admin\eclipse-workspace\sprint\Screenshots\verifyUnauthorizedUserCannotAccessProducts_20261010_115651.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:Product.ProductNegativeTest@f1da57d]" started-at="2026-10-10T11:56:52 IST" name="afterClass" finished-at="2026-10-10T11:56:52 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test class completed: ProductNegativeTest]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- Product.ProductNegativeTest -->
+      <class name="AddCart.PurchaseNegativeTest">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:AddCart.PurchaseNegativeTest@5fb759d6]" started-at="2026-10-10T11:56:52 IST" name="beforeClass" finished-at="2026-10-10T11:56:52 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test class: PurchaseNegativeTest]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:AddCart.PurchaseNegativeTest@5fb759d6]" started-at="2026-10-10T11:56:52 IST" name="launchApplication" finished-at="2026-10-10T11:56:53 IST" duration-ms="1706" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Browser launched: chrome]]>
+            </line>
+            <line>
+              <![CDATA[Application opened: https://www.saucedemo.com/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="verifyCheckoutRequiresMandatoryData()[pri:0, instance:AddCart.PurchaseNegativeTest@5fb759d6]" started-at="2026-10-10T11:56:53 IST" name="verifyCheckoutRequiresMandatoryData" finished-at="2026-10-10T11:56:55 IST" duration-ms="1297" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Mandatory checkout validation passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyCheckoutRequiresMandatoryData -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:AddCart.PurchaseNegativeTest@5fb759d6]" started-at="2026-10-10T11:56:55 IST" name="afterMethod" finished-at="2026-10-10T11:56:55 IST" duration-ms="335" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCheckoutRequiresMandatoryData status=SUCCESS method=PurchaseNegativeTest.verifyCheckoutRequiresMandatoryData()[pri:0, instance:AddCart.PurchaseNegativeTest@5fb759d6] output=Mandatory checkout validation passed]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Negative test screenshot: C:\Users\Admin\eclipse-workspace\sprint\Screenshots\verifyCheckoutRequiresMandatoryData_20261010_115655.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:AddCart.PurchaseNegativeTest@5fb759d6]" started-at="2026-10-10T11:56:55 IST" name="afterClass" finished-at="2026-10-10T11:56:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test class completed: PurchaseNegativeTest]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- AddCart.PurchaseNegativeTest -->
+      <class name="Login.LoginNegativeTest">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Login.LoginNegativeTest@338fc1d8]" started-at="2026-10-10T11:56:40 IST" name="beforeClass" finished-at="2026-10-10T11:56:40 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test class: LoginNegativeTest]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:Login.LoginNegativeTest@338fc1d8]" started-at="2026-10-10T11:56:40 IST" name="launchApplication" finished-at="2026-10-10T11:56:43 IST" duration-ms="2523" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Browser launched: chrome]]>
+            </line>
+            <line>
+              <![CDATA[Application opened: https://www.saucedemo.com/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="verifyInvalidCredentialsShowError()[pri:0, instance:Login.LoginNegativeTest@338fc1d8]" started-at="2026-10-10T11:56:43 IST" name="verifyInvalidCredentialsShowError" finished-at="2026-10-10T11:56:46 IST" duration-ms="3354" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Invalid credential validation completed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidCredentialsShowError -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:Login.LoginNegativeTest@338fc1d8]" started-at="2026-10-10T11:56:46 IST" name="afterMethod" finished-at="2026-10-10T11:56:47 IST" duration-ms="370" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyInvalidCredentialsShowError status=SUCCESS method=LoginNegativeTest.verifyInvalidCredentialsShowError()[pri:0, instance:Login.LoginNegativeTest@338fc1d8] output=Invalid credential validation completed]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Negative test screenshot: C:\Users\Admin\eclipse-workspace\sprint\Screenshots\verifyInvalidCredentialsShowError_20261010_115646.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:Login.LoginNegativeTest@338fc1d8]" started-at="2026-10-10T11:56:47 IST" name="launchApplication" finished-at="2026-10-10T11:56:48 IST" duration-ms="1806" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Browser launched: chrome]]>
+            </line>
+            <line>
+              <![CDATA[Application opened: https://www.saucedemo.com/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="verifyLockedUserCannotLogin()[pri:0, instance:Login.LoginNegativeTest@338fc1d8]" started-at="2026-10-10T11:56:48 IST" name="verifyLockedUserCannotLogin" finished-at="2026-10-10T11:56:49 IST" duration-ms="773" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Locked user validation completed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLockedUserCannotLogin -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:Login.LoginNegativeTest@338fc1d8]" started-at="2026-10-10T11:56:49 IST" name="afterMethod" finished-at="2026-10-10T11:56:50 IST" duration-ms="330" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLockedUserCannotLogin status=SUCCESS method=LoginNegativeTest.verifyLockedUserCannotLogin()[pri:0, instance:Login.LoginNegativeTest@338fc1d8] output=Locked user validation completed]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Negative test screenshot: C:\Users\Admin\eclipse-workspace\sprint\Screenshots\verifyLockedUserCannotLogin_20261010_115649.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:Login.LoginNegativeTest@338fc1d8]" started-at="2026-10-10T11:56:50 IST" name="afterClass" finished-at="2026-10-10T11:56:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test class completed: LoginNegativeTest]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- Login.LoginNegativeTest -->
+    </test> <!-- NegativeTests -->
+  </suite> <!-- Negative Suite -->
+</testng-results>
