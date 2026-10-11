@@ -23,70 +23,87 @@ public class ContactCommunityFunctionalTest extends BaseClass {
     }
 
     @Test(groups = "Functional")
-    public void verifySauceLabsCommunityLinkIsAccessible() throws Exception {
+    public void verifySauceLabsCommunityLink() throws Exception {
+
         ExcelUtility excel = new ExcelUtility();
         String socialLink1 = excel.getDataByTestId("ContactCommunity", "CONTACT-FUN-002", "SocialLink1");
         String socialLink2 = excel.getDataByTestId("ContactCommunity", "CONTACT-FUN-002", "SocialLink2");
         String socialLink3 = excel.getDataByTestId("ContactCommunity", "CONTACT-FUN-002", "SocialLink3");
+
         ContactPage page = openContactCommunityArea();
-        boolean available = page.hasSocialLink(socialLink1) || page.hasSocialLink(socialLink2) || page.hasSocialLink(socialLink3);
-        Assert.assertTrue(available, "No community/social link found");
-        Reporter.log("Community/social navigation is accessible", true);
+        List<WebElement> links = page.links();
+        boolean available = false;
+        for (WebElement link : links) {
+            String href = link.getAttribute("href");
+            if (href != null &&
+                (href.contains(socialLink1) || href.contains(socialLink2) || href.contains(socialLink3))) 
+            	{
+                	available = true;
+                	break;
+            	}
+        	}
+
+        Assert.assertTrue(available,"No community/social link found");
+        Reporter.log("Community/social navigation is accessible",true);
     }
 
     @Test(groups = "Functional")
-    public void verifySupportHelpNavigationIsAccessible() throws Exception {
+    public void verifySupportHelpNavigation() throws Exception {
+
         ExcelUtility excel = new ExcelUtility();
-        int minimumLinks = Integer.parseInt(excel.getDataByTestId("ContactCommunity", "CONTACT-FUN-003", "MinFooterLinks"));
+        int minimumLinks = Integer.parseInt(excel.getDataByTestId("ContactCommunity","CONTACT-FUN-003","MinFooterLinks"));
         ContactPage page = openContactCommunityArea();
-        Assert.assertTrue(page.getFooterLinkCount() >= minimumLinks, "Footer navigation is unavailable");
-        Reporter.log("Footer support/community navigation verified", true);
+
+        Assert.assertTrue(page.linkCount() >= minimumLinks,"Footer navigation is unavailable");
+        Reporter.log("Footer support/community navigation verified",true);
     }
 
     @Test(groups = "Functional")
-    public void verifySelectedExternalLinkOpensCorrectly() throws Exception {
+    public void verifyExternalLink() throws Exception {
+
         ContactPage page = openContactCommunityArea();
-        List<WebElement> links = page.getFooterLinks();
-        Assert.assertFalse(links.isEmpty(), "No footer link is available");
+        List<WebElement> links = page.links();
+        Assert.assertFalse(links.isEmpty(),"No footer link is available");
         String href = links.get(0).getAttribute("href");
-        Assert.assertNotNull(href, "Footer link has no destination");
-        Assert.assertFalse(href.isBlank(), "Footer link destination is blank");
-        Reporter.log("Selected footer destination verified", true);
+        Assert.assertNotNull(href,"Footer link has no destination");
+        Assert.assertFalse(href.isBlank(),"Footer link destination is blank");
+        Reporter.log("Selected footer destination verified",true);
     }
 
     @Test(groups = "Functional")
-    public void verifyBrowserNavigationReturnsCorrectly() throws Exception {
-        ExcelUtility excel =new ExcelUtility();
-        String expectedUrl =excel.getDataByTestId("ContactCommunity","CONTACT-FUN-005","ExpectedApplicationUrl");
-        ContactPage page =openContactCommunityArea();
+    public void verifyBrowserNavigation() throws Exception {
+
+        ExcelUtility excel = new ExcelUtility();
+        String expectedUrl = excel.getDataByTestId("ContactCommunity","CONTACT-FUN-005","ExpectedApplicationUrl");
+        ContactPage page = openContactCommunityArea();
         Assert.assertEquals(driver.getCurrentUrl(),expectedUrl,"Application URL is unexpected");
         driver.navigate().refresh();
-        
         Assert.assertEquals(driver.getCurrentUrl(),expectedUrl,"Application URL changed after refresh");
-        Assert.assertTrue(page.isFooterDisplayed(),"Footer disappeared after refresh");
+        Assert.assertTrue(page.footer(),"Footer disappeared after refresh");
         Reporter.log("Browser navigation behavior verified",true);
     }
 
     @Test(groups = "Functional")
-    public void verifyContactCommunitySupportedAction50() throws Exception {
-        verifyFooterNavigationAvailability("CONTACT-FUN-006");
+    public void verifySupportedAction50() throws Exception {
+        verifyFooterNavigation("CONTACT-FUN-006");
     }
 
     @Test(groups = "Functional")
-    public void verifyContactCommunitySupportedAction55() throws Exception {
-        verifyFooterNavigationAvailability("CONTACT-FUN-007");
+    public void verifySupportedAction55() throws Exception {
+        verifyFooterNavigation("CONTACT-FUN-007");
     }
 
     @Test(groups = "Functional")
-    public void verifyContactCommunitySupportedAction60() throws Exception {
-        verifyFooterNavigationAvailability("CONTACT-FUN-008");
+    public void verifySupportedAction60() throws Exception {
+        verifyFooterNavigation("CONTACT-FUN-008");
     }
 
-    private void verifyFooterNavigationAvailability(String testId) throws Exception {
+    private void verifyFooterNavigation(String testId) throws Exception {
         ExcelUtility excel = new ExcelUtility();
-        int minimumLinks = Integer.parseInt(excel.getDataByTestId("ContactCommunity", testId, "MinFooterLinks"));
+        int minimumLinks = Integer.parseInt(excel.getDataByTestId("ContactCommunity",testId,"MinFooterLinks"));
+
         ContactPage page = openContactCommunityArea();
-        Assert.assertTrue(page.getFooterLinkCount() >= minimumLinks, "Supported ContactCommunity navigation is unavailable");
+        Assert.assertTrue(page.linkCount() >= minimumLinks,"Supported ContactCommunity navigation is unavailable");
         Reporter.log("ContactCommunity navigation verified for " + testId, true);
     }
 }

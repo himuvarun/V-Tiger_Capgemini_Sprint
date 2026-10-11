@@ -21,8 +21,8 @@ public class ContactCommunityIntegrationTest extends BaseClass {
         new LoginPage(driver).login(username, password);
 
         ContactPage page = new ContactPage(driver);
-        Assert.assertTrue(page.isFooterDisplayed(), "Footer is missing after login");
-        Assert.assertTrue(page.getFooterLinkCount() >= expectedMinimumLinks,"External community destination is unavailable");
+        Assert.assertTrue(page.footer(), "Footer is missing after login");
+        Assert.assertTrue(page.linkCount() >= expectedMinimumLinks,"External community destination is unavailable");
         Reporter.log("Application and community navigation integration verified", true);
     }
 }

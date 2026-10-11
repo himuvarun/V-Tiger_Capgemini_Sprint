@@ -37,16 +37,16 @@ public class PurchaseSystemTest extends BaseClass {
         productPage.openCart();
 
         CartPage cartPage = new CartPage(driver);
-        Assert.assertEquals(cartPage.getCartItemCount(),1,"Product was not added to Cart");
-        cartPage.clickCheckout();
+        Assert.assertEquals(cartPage.count(),1,"Product was not added to Cart");
+        cartPage.checkout();
         CheckoutPage checkoutPage = new CheckoutPage(driver);
-        checkoutPage.enterCustomerDetails(firstName,lastName,postalCode);
-        checkoutPage.clickContinue();
+        checkoutPage.enterDetails(firstName,lastName,postalCode);
+        checkoutPage.continuePage();
 
         CheckoutOverviewPage overviewPage =new CheckoutOverviewPage(driver);
-        Assert.assertTrue(overviewPage.containsProduct(productName),"Product is missing from Checkout Overview");
-        overviewPage.finishOrder();
-        String actualMessage =new CheckoutCompletePage(driver).getConfirmationMessage();
+        Assert.assertTrue(overviewPage.contains(productName),"Product is missing from Checkout Overview");
+        overviewPage.finish();
+        String actualMessage =new CheckoutCompletePage(driver).message();
         Assert.assertEquals(actualMessage,expectedMessage,"End-to-end purchase failed");
         Reporter.log("Complete Login to Purchase system flow passed",true);
     }
@@ -67,21 +67,21 @@ public class PurchaseSystemTest extends BaseClass {
 
         productPage.openCart();
         CartPage cartPage = new CartPage(driver);
-        Assert.assertEquals(cartPage.getCartItemCount(),2,"Multiple products were not added to Cart");
-        Assert.assertTrue(cartPage.containsProduct(productOne),"First product is missing from Cart");
-        Assert.assertTrue(cartPage.containsProduct(productTwo),"Second product is missing from Cart");
-        cartPage.clickCheckout();
+        Assert.assertEquals(cartPage.count(),2,"Multiple products were not added to Cart");
+        Assert.assertTrue(cartPage.contains(productOne),"First product is missing from Cart");
+        Assert.assertTrue(cartPage.contains(productTwo),"Second product is missing from Cart");
+        cartPage.checkout();
         
         CheckoutPage checkoutPage = new CheckoutPage(driver);
-        checkoutPage.enterCustomerDetails(firstName,lastName,postalCode);
-        checkoutPage.clickContinue();
+        checkoutPage.enterDetails(firstName,lastName,postalCode);
+        checkoutPage.continuePage();
         
         CheckoutOverviewPage overviewPage =new CheckoutOverviewPage(driver);
-        Assert.assertTrue(overviewPage.containsProduct(productOne),"First product is missing from Checkout Overview");
-        Assert.assertTrue(overviewPage.containsProduct(productTwo),"Second product is missing from Checkout Overview");
-        overviewPage.finishOrder();
+        Assert.assertTrue(overviewPage.contains(productOne),"First product is missing from Checkout Overview");
+        Assert.assertTrue(overviewPage.contains(productTwo),"Second product is missing from Checkout Overview");
+        overviewPage.finish();
         
-        String actualMessage =new CheckoutCompletePage(driver).getConfirmationMessage();
+        String actualMessage =new CheckoutCompletePage(driver).message();
         Assert.assertEquals(actualMessage,expectedMessage,"Multiple product purchase failed");
         Reporter.log("Multiple product purchase system flow passed",true);
     }

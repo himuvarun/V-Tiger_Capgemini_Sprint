@@ -20,8 +20,8 @@ public class ContactCommunitySystemTest extends BaseClass {
         int minimumLinks = Integer.parseInt(excel.getDataByTestId("ContactCommunity", "CONTACT-SYS-001", "MinFooterLinks"));
         new LoginPage(driver).login(username, password);
         ContactPage page = new ContactPage(driver);
-        Assert.assertTrue(page.isFooterDisplayed(), "Footer is missing in complete flow");
-        Assert.assertTrue(page.getFooterLinkCount() >= minimumLinks, "ContactCommunity navigation is unavailable");
+        Assert.assertTrue(page.footer(), "Footer is missing in complete flow");
+        Assert.assertTrue(page.linkCount() >= minimumLinks, "ContactCommunity navigation is unavailable");
         Reporter.log("Complete application to ContactCommunity flow verified", true);
     }
 
@@ -33,9 +33,9 @@ public class ContactCommunitySystemTest extends BaseClass {
         int minimumLinks = Integer.parseInt(excel.getDataByTestId("ContactCommunity", "CONTACT-SYS-002", "MinFooterLinks"));
         new LoginPage(driver).login(username, password);
         ProductPage productPage = new ProductPage(driver);
-        Assert.assertTrue(productPage.getProductCount() > 0, "Products are missing");
+        Assert.assertTrue(productPage.count() > 0, "Products are missing");
         ContactPage page = new ContactPage(driver);
-        Assert.assertTrue(page.getFooterLinkCount() >= minimumLinks, "ContactCommunity navigation is unavailable");
+        Assert.assertTrue(page.linkCount() >= minimumLinks, "ContactCommunity navigation is unavailable");
         Reporter.log("End-to-end ContactCommunity scenario 10 verified", true);
     }
 }

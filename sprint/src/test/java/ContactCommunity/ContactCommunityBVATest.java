@@ -27,7 +27,7 @@ public class ContactCommunityBVATest extends BaseClass {
         ExcelUtility excel = new ExcelUtility();
         int expectedMinimum = Integer.parseInt(excel.getDataByTestId("ContactCommunity", "CONTACT-BVA-001", "MinFooterLinks"));
         ContactPage page = openContactCommunityArea();
-        List<WebElement> links = page.getFooterLinks();
+        List<WebElement> links = page.links();
         Assert.assertTrue(links.size() >= expectedMinimum, "First navigation boundary is unavailable");
         Assert.assertNotNull(links.get(0), "First footer navigation link is unavailable");
         Reporter.log("First footer navigation boundary verified", true);
@@ -38,7 +38,7 @@ public class ContactCommunityBVATest extends BaseClass {
         ExcelUtility excel = new ExcelUtility();
         int expectedMinimum = Integer.parseInt(excel.getDataByTestId("ContactCommunity", "CONTACT-BVA-002", "MinFooterLinks"));
         ContactPage page = openContactCommunityArea();
-        List<WebElement> links = page.getFooterLinks();
+        List<WebElement> links = page.links();
         Assert.assertTrue(links.size() >= expectedMinimum, "Footer navigation boundary is unavailable");
         Assert.assertNotNull(links.get(links.size() - 1), "Last footer navigation link is unavailable");
         Reporter.log("Last footer navigation boundary verified", true);

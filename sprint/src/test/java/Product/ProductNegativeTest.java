@@ -1,7 +1,6 @@
 package Product;
 
 import baseClass.BaseClass;
-import objRepo.HomePage;
 
 import org.testng.Assert;
 import org.testng.Reporter;
@@ -12,8 +11,7 @@ public class ProductNegativeTest extends BaseClass {
     @Test(groups = "Negative")
     public void verifyUnauthorizedUserCannotAccessProducts() throws Exception {
 
-        HomePage home = new HomePage(driver);
-        home.openInventoryDirectly();
+        driver.get(driver.getCurrentUrl() + "inventory.html");
         Assert.assertFalse(driver.getCurrentUrl().endsWith("/inventory.html"),"Unauthorized user reached Products");
         Reporter.log("Unauthorized Product access was blocked",true);
     }

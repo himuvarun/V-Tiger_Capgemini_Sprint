@@ -20,7 +20,7 @@ public class LoginNegativeTest extends BaseClass {
         
         LoginPage page = new LoginPage(driver);
         page.login(username, password);
-        Assert.assertTrue(page.getErrorMessage().contains(expectedError),"Invalid login error is missing");
+        Assert.assertTrue(page.error().contains(expectedError),"Invalid login error is missing");
         Reporter.log("Invalid credential validation completed",true);
     }
 
@@ -33,7 +33,7 @@ public class LoginNegativeTest extends BaseClass {
         
         LoginPage page = new LoginPage(driver);
         page.login(username, password);
-        Assert.assertTrue(page.getErrorMessage().contains(expectedError),"Locked user error is missing");
+        Assert.assertTrue(page.error().contains(expectedError),"Locked user error is missing");
         Reporter.log("Locked user validation completed",true);
     }
 }

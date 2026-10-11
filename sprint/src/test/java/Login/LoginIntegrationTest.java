@@ -20,7 +20,7 @@ public class LoginIntegrationTest extends BaseClass {
         String expectedTitle = excel.getDataByTestId("Login", "LOGIN-INT-001", "ExpectedTitle");
 
         new LoginPage(driver).login(username, password);
-        Assert.assertEquals(new ProductPage(driver).getPageTitle(),expectedTitle,"Login did not reach Products");
+        Assert.assertEquals(new ProductPage(driver).title(),expectedTitle,"Login did not reach Products");
         Reporter.log("Login to Product integration verified", true);
     }
 }

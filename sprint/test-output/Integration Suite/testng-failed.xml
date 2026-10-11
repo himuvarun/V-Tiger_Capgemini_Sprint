@@ -8,19 +8,28 @@
       </run>
     </groups>
     <classes>
+      <class name="Product.ProductIntegrationTest">
+        <methods>
+          <include name="verifyProductIntegratesWithCart"/>
+        </methods>
+      </class> <!-- Product.ProductIntegrationTest -->
       <class name="ContactCommunity.ContactCommunityIntegrationTest">
         <methods>
-          <include name="afterClass"/>
-          <include name="launchApplication"/>
           <include name="verifyApplicationNavigationIntegratesWithExternalCommunityDestination"/>
-          <include name="afterMethod"/>
-          <include name="beforeTest"/>
-          <include name="beforeSuite"/>
-          <include name="afterTest"/>
-          <include name="afterSuite"/>
-          <include name="beforeClass"/>
         </methods>
       </class> <!-- ContactCommunity.ContactCommunityIntegrationTest -->
+      <class name="Login.LoginIntegrationTest">
+        <methods>
+          <include name="verifyLoginIntegratesWithProduct"/>
+        </methods>
+      </class> <!-- Login.LoginIntegrationTest -->
+      <class name="AddCart.PurchaseIntegrationTest">
+        <methods>
+          <include name="verifyCheckoutIntegratesWithOrderCompletion"/>
+          <include name="verifyProductToCartIntegration"/>
+          <include name="verifyCartDetailsTransferToCheckout"/>
+        </methods>
+      </class> <!-- AddCart.PurchaseIntegrationTest -->
     </classes>
   </test> <!-- IntegrationTests(failed) -->
 </suite> <!-- Failed suite [Integration Suite] -->

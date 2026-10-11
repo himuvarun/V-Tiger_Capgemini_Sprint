@@ -26,10 +26,10 @@ public class PurchaseNegativeTest extends BaseClass {
         product.addProduct(productName);
         product.openCart();
 
-        new CartPage(driver).clickCheckout();
+        new CartPage(driver).checkout();
         CheckoutPage checkout =new CheckoutPage(driver);
-        checkout.clickContinue();
-        Assert.assertTrue(checkout.getErrorMessage().contains(expectedError),"Mandatory field error not displayed");
+        checkout.continuePage();
+        Assert.assertTrue(checkout.error().contains(expectedError),"Mandatory field error not displayed");
         Reporter.log("Mandatory checkout validation passed",true);
     }
 }

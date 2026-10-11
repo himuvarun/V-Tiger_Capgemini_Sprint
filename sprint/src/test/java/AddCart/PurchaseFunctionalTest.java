@@ -31,7 +31,7 @@ public class PurchaseFunctionalTest extends BaseClass {
         productPage.addProduct(productName);
         productPage.openCart();
 
-        Assert.assertEquals(new CartPage(driver).getCartItemCount(),1,"Product was not added to Cart");
+        Assert.assertEquals(new CartPage(driver).count(),1,"Product was not added to Cart");
         Reporter.log("Product added to cart successfully", true);
     }
 
@@ -44,7 +44,7 @@ public class PurchaseFunctionalTest extends BaseClass {
         productPage.addProduct(productName);
         productPage.openCart();
 
-        Assert.assertTrue(new CartPage(driver).containsProduct(productName),"Product is missing in Cart");
+        Assert.assertTrue(new CartPage(driver).contains(productName),"Product is missing in Cart");
         Reporter.log("Added product appears in Cart", true);
     }
 
@@ -70,9 +70,9 @@ public class PurchaseFunctionalTest extends BaseClass {
         productPage.openCart();
 
         CartPage cartPage = new CartPage(driver);
-        cartPage.removeProduct(productName);
+        cartPage.remove(productName);
 
-        Assert.assertEquals(cartPage.getCartItemCount(),0,"Product was not removed");
+        Assert.assertEquals(cartPage.count(),0,"Product was not removed");
         Reporter.log("Product removal verified", true);
     }
 
@@ -90,12 +90,12 @@ public class PurchaseFunctionalTest extends BaseClass {
         productPage.addProduct(productName);
         productPage.openCart();
 
-        new CartPage(driver).clickCheckout();
+        new CartPage(driver).checkout();
         CheckoutPage checkoutPage = new CheckoutPage(driver);
-        checkoutPage.enterCustomerDetails(firstName,lastName,postalCode);
-        checkoutPage.clickContinue();
+        checkoutPage.enterDetails(firstName,lastName,postalCode);
+        checkoutPage.continuePage();
 
-        Assert.assertEquals(new CheckoutOverviewPage(driver).getTitle(),expectedTitle,"Checkout details were not accepted");
+        Assert.assertEquals(new CheckoutOverviewPage(driver).title(),expectedTitle,"Checkout details were not accepted");
         Reporter.log("Customer details accepted successfully",true);
     }
 
@@ -112,13 +112,13 @@ public class PurchaseFunctionalTest extends BaseClass {
         productPage.addProduct(productName);
         productPage.openCart();
 
-        new CartPage(driver).clickCheckout();
+        new CartPage(driver).checkout();
         CheckoutPage checkoutPage = new CheckoutPage(driver);
-        checkoutPage.enterCustomerDetails(firstName,lastName,postalCode);
-        checkoutPage.clickContinue();
+        checkoutPage.enterDetails(firstName,lastName,postalCode);
+        checkoutPage.continuePage();
 
-        new CheckoutOverviewPage(driver).finishOrder();
-        Assert.assertEquals(new CheckoutCompletePage(driver).getConfirmationMessage(),expectedMessage,"Order was not completed");
+        new CheckoutOverviewPage(driver).finish();
+        Assert.assertEquals(new CheckoutCompletePage(driver).message(),expectedMessage,"Order was not completed");
         Reporter.log("Purchase completed successfully",true);
     }
 
@@ -135,13 +135,13 @@ public class PurchaseFunctionalTest extends BaseClass {
         productPage.addProduct(productName);
         productPage.openCart();
 
-        new CartPage(driver).clickCheckout();
+        new CartPage(driver).checkout();
         CheckoutPage checkoutPage = new CheckoutPage(driver);
-        checkoutPage.enterCustomerDetails(firstName,lastName,postalCode);
-        checkoutPage.clickContinue();
+        checkoutPage.enterDetails(firstName,lastName,postalCode);
+        checkoutPage.continuePage();
 
-        new CheckoutOverviewPage(driver).finishOrder();
-        String actualMessage =new CheckoutCompletePage(driver).getConfirmationMessage();
+        new CheckoutOverviewPage(driver).finish();
+        String actualMessage =new CheckoutCompletePage(driver).message();
         Assert.assertEquals(actualMessage,expectedMessage,"Order confirmation message is incorrect");
         Reporter.log("Order confirmation displayed successfully",true);
     }

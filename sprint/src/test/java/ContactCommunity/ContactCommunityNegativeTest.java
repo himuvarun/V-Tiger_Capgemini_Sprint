@@ -23,7 +23,7 @@ public class ContactCommunityNegativeTest extends BaseClass {
         int expectedMinimumLinks =Integer.parseInt(excel.getDataByTestId("ContactCommunity","CONTACT-NEG-001","MinFooterLinks"));
         new LoginPage(driver).login(username,password);
         ContactPage page =new ContactPage(driver);
-        List<WebElement> links =page.getFooterLinks();
+        List<WebElement> links =page.links();
         Assert.assertTrue(links.size() >= expectedMinimumLinks,"Footer navigation is unavailable");
 
         for (WebElement link : links) {

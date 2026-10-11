@@ -12,17 +12,19 @@ import org.testng.annotations.Test;
 public class LoginSystemTest extends BaseClass {
 
     @Test(groups = "System")
-    public void verifyCompleteLoginToProductsFlow() throws Exception {
+    public void verifyLoginToProductsFlow() throws Exception {
 
         ExcelUtility excel = new ExcelUtility();
-        String username = excel.getDataByTestId("Login","LOGIN-SMOKE-001","Username");
-        String password = excel.getDataByTestId("Login","LOGIN-SMOKE-001","Password");
-        String expectedTitle = excel.getDataByTestId("Login","LOGIN-SMOKE-001","ExpectedTitle");
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.login(username, password);
-        ProductPage productPage = new ProductPage(driver);
-        Assert.assertEquals(productPage.getPageTitle(),expectedTitle,"Login to Products system flow failed");
-        Assert.assertTrue(productPage.getProductCount() > 0,"Products are not displayed after login");
-        Reporter.log("Complete Login to Products system flow passed",true);
+        String username = excel.getDataByTestId("Login", "LOGIN-SMOKE-001", "Username");
+        String password = excel.getDataByTestId("Login", "LOGIN-SMOKE-001", "Password");
+        String expectedTitle = excel.getDataByTestId("Login", "LOGIN-SMOKE-001", "ExpectedTitle");
+
+        LoginPage login = new LoginPage(driver);
+        login.login(username, password);
+
+        ProductPage product = new ProductPage(driver);
+        Assert.assertEquals(product.title(),expectedTitle,"Login to Products flow failed");
+        Assert.assertTrue(product.count() > 0,"Products are not displayed");
+        Reporter.log("Login to Products system flow passed", true);
     }
 }

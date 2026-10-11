@@ -24,7 +24,7 @@ public class ProductIntegrationTest extends BaseClass {
         ProductPage page = new ProductPage(driver);
         page.addProduct(productName);
         page.openCart();
-        Assert.assertEquals(new CartPage(driver).getCartItemCount(),1,"Product was not transferred to cart");
+        Assert.assertEquals(new CartPage(driver).count(),1,"Product was not transferred to cart");
         Reporter.log("Product to Cart integration verified", true);
     }
 }

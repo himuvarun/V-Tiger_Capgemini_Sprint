@@ -32,10 +32,10 @@ public class PurchaseBVATest extends BaseClass
         product.addProduct(productName);
         product.openCart();
 
-        new CartPage(driver).clickCheckout();
+        new CartPage(driver).checkout();
         CheckoutPage checkout = new CheckoutPage(driver);
-        checkout.enterCustomerDetails(firstName, lastName, postalCode);
-        checkout.clickContinue();
+        checkout.enterDetails(firstName, lastName, postalCode);
+        checkout.continuePage();
 
         Assert.assertTrue(driver.getCurrentUrl().contains(expectedUrlPart),"Postal code boundary was rejected unexpectedly");
         Reporter.log("Postal code boundary value accepted successfully: " + postalCode,true);

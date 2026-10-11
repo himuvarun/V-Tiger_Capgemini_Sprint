@@ -15,6 +15,7 @@ public class LoginBVATest extends BaseClass {
         ExcelUtility excel = new ExcelUtility();
         String username = excel.getDataByTestId("Login", "LOGIN-BVA-001", "Username");
         String expectedInput = excel.getDataByTestId("Login", "LOGIN-BVA-001", "ExpectedInput");
+       
         LoginPage page = new LoginPage(driver);
         page.enterUsername(username);
         Assert.assertEquals(driver.findElement(org.openqa.selenium.By.id("user-name")).getAttribute("value"),expectedInput,"Username boundary input was not accepted");

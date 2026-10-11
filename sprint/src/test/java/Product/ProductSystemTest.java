@@ -21,14 +21,14 @@ public class ProductSystemTest extends BaseClass {
         
         new LoginPage(driver).login(username, password);
         ProductPage productPage = new ProductPage(driver);
-        Assert.assertTrue(productPage.getProductCount() > 0,"Products are not displayed after login");
+        Assert.assertTrue(productPage.count() > 0,"Products are not displayed after login");
         productPage.addProduct(productName);
         productPage.openCart();
 
         CartPage cartPage = new CartPage(driver);
 
-        Assert.assertEquals(cartPage.getCartItemCount(),1,"Product was not transferred to Cart");
-        Assert.assertTrue(cartPage.containsProduct(productName),"Selected product is missing from Cart");
+        Assert.assertEquals(cartPage.count(),1,"Product was not transferred to Cart");
+        Assert.assertTrue(cartPage.contains(productName),"Selected product is missing from Cart");
         Reporter.log("Complete Product system flow passed",true);
     }
 }

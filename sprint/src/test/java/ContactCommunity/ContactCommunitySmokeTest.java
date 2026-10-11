@@ -21,8 +21,8 @@ public class ContactCommunitySmokeTest extends BaseClass {
         new LoginPage(driver).login(username, password);
         ContactPage page = new ContactPage(driver);
 
-        Assert.assertTrue(page.isFooterDisplayed(), "Footer is not displayed");
-        Assert.assertTrue(page.getFooterLinkCount() >= expectedMinimumLinks, "Community navigation links are unavailable");
+        Assert.assertTrue(page.footer(), "Footer is not displayed");
+        Assert.assertTrue(page.linkCount() >= expectedMinimumLinks, "Community navigation links are unavailable");
         Reporter.log("Community/support navigation area is available", true);
     }
 }

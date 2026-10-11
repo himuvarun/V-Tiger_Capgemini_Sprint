@@ -29,7 +29,7 @@ public class PurchaseIntegrationTest extends BaseClass {
         ProductPage product = new ProductPage(driver);
         product.addProduct(productName);
         product.openCart();
-        Assert.assertEquals(new CartPage(driver).getCartItemCount(),1,"Product to Cart integration failed");
+        Assert.assertEquals(new CartPage(driver).count(),1,"Product to Cart integration failed");
         Reporter.log("Product to Cart integration passed",true);
     }
 
@@ -42,25 +42,23 @@ public class PurchaseIntegrationTest extends BaseClass {
         String postalCode = excel.getDataByTestId("Checkout", "CHECKOUT-INT-001", "PostalCode");
         String expectedTitle = excel.getDataByTestId("Checkout", "CHECKOUT-INT-001", "ExpectedTitle");
         login();
+        
         ProductPage product = new ProductPage(driver);
         product.addProduct(productName);
         product.openCart();
+        
         CartPage cart = new CartPage(driver);
-
-        Assert.assertTrue(
-                cart.containsProduct(productName),
-                "Product is not available in Cart");
-
-        cart.clickCheckout();
+        Assert.assertTrue(cart.contains(productName),"Product is not available in Cart");
+        cart.checkout();
 
         Assert.assertTrue(driver.getCurrentUrl().contains("checkout-step-one"),"Cart did not navigate to Checkout");
         CheckoutPage checkout = new CheckoutPage(driver);
-        checkout.enterCustomerDetails(firstName,lastName,postalCode);
-        checkout.clickContinue();
+        checkout.enterDetails(firstName,lastName,postalCode);
+        checkout.continuePage();
         CheckoutOverviewPage overview =new CheckoutOverviewPage(driver);
 
-        Assert.assertEquals(overview.getTitle(),expectedTitle,"Cart details were not transferred to Checkout Overview");
-        Assert.assertTrue(overview.containsProduct(productName),"Cart product was not transferred to Checkout Overview");
+        Assert.assertEquals(overview.title(),expectedTitle,"Cart details were not transferred to Checkout Overview");
+        Assert.assertTrue(overview.contains(productName),"Cart product was not transferred to Checkout Overview");
         Reporter.log("Cart details transferred to Checkout successfully",true);
     }
 
@@ -78,14 +76,14 @@ public class PurchaseIntegrationTest extends BaseClass {
         product.addProduct(productName);
         product.openCart();
 
-        new CartPage(driver).clickCheckout();
+        new CartPage(driver).checkout();
         CheckoutPage checkout = new CheckoutPage(driver);
-        checkout.enterCustomerDetails(firstName,lastName,postalCode);
-        checkout.clickContinue();
+        checkout.enterDetails(firstName,lastName,postalCode);
+        checkout.continuePage();
 
         CheckoutOverviewPage overview =new CheckoutOverviewPage(driver);
-        overview.finishOrder();
-        String actualMessage =new CheckoutCompletePage(driver).getConfirmationMessage();
+        overview.finish();
+        String actualMessage =new CheckoutCompletePage(driver).message();
         Assert.assertEquals(actualMessage,expectedMessage,"Checkout did not integrate with order completion");
         Reporter.log("Checkout to order completion integration passed",true);
     }

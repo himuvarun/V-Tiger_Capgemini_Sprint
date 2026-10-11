@@ -1,7 +1,9 @@
 package objRepo;
 
-import org.openqa.selenium.*;
-import org.openqa.selenium.support.*;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class CheckoutPage {
 
@@ -21,28 +23,33 @@ public class CheckoutPage {
     private WebElement errorMessage;
 
     @FindBy(className = "title")
-    private WebElement pageTitle;
+    private WebElement title;
 
     public CheckoutPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
 
-    public void enterCustomerDetails(String first, String last, String zip) 
-    {
+    public void enterDetails(String first,String last,String zip) {
+
+        firstName.clear();
         firstName.sendKeys(first);
+
+        lastName.clear();
         lastName.sendKeys(last);
+
+        postalCode.clear();
         postalCode.sendKeys(zip);
     }
 
-    public void clickContinue() {
+    public void continuePage() {
         continueButton.click();
     }
 
-    public String getErrorMessage() {
+    public String error() {
         return errorMessage.getText();
     }
 
-    public boolean isPageDisplayed() {
-        return pageTitle.isDisplayed();
+    public String title() {
+        return title.getText();
     }
 }

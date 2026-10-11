@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Negative_Suite" class="navigator-link ">
-                    <span>C:\Users\Admin\eclipse-workspace\sprint\Negative.xml</span>
+                    <span>C:\Users\Admin\git\sprint_Local_Repo\sprint\Negative.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -208,7 +208,7 @@
         </div> <!-- panel Negative_Suite -->
         <div panel-name="test-xml-Negative_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Admin\eclipse-workspace\sprint\Negative.xml</span>
+            <span class="header-content">C:\Users\Admin\git\sprint_Local_Repo\sprint\Negative.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -320,28 +320,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyInvalidCredentialsShowError')
 data.setCell(0, 2, 'Login.LoginNegativeTest')
-data.setCell(0, 3, 3354);
+data.setCell(0, 3, 1401);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyCheckoutRequiresMandatoryData')
 data.setCell(1, 2, 'AddCart.PurchaseNegativeTest')
-data.setCell(1, 3, 1297);
+data.setCell(1, 3, 1003);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyInvalidFooterDestinationIsRejected')
 data.setCell(2, 2, 'ContactCommunity.ContactCommunityNegativeTest')
-data.setCell(2, 3, 933);
+data.setCell(2, 3, 654);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyLockedUserCannotLogin')
 data.setCell(3, 2, 'Login.LoginNegativeTest')
-data.setCell(3, 3, 773);
+data.setCell(3, 3, 575);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'verifyUnauthorizedUserCannotAccessProducts')
 data.setCell(4, 2, 'Product.ProductNegativeTest')
-data.setCell(4, 3, 251);
+data.setCell(4, 3, 130);
 window.suiteTableData['Negative_Suite']= { tableData: data, tableDiv: 'times-div-Negative_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Negative_Suite">
               </div> <!-- times-div-Negative_Suite -->
             </div> <!-- times-div -->
@@ -353,12 +353,6 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">verifyLockedUserCannotLogin</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Locked user validation completed</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
               <span class="reporter-method-name">verifyInvalidCredentialsShowError</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Invalid credential validation completed</span>
@@ -368,6 +362,12 @@ return data;
               <span class="reporter-method-name">verifyCheckoutRequiresMandatoryData</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Mandatory checkout validation passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyLockedUserCannotLogin</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Locked user validation completed</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -386,19 +386,15 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Negative_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">134 ignored methods</span>
+            <span class="header-content">88 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">Login.LoginNegativeTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">beforeTest</span>
-                <br/>
                 <span class="ignored-method-name">afterSuite</span>
                 <br/>
                 <span class="ignored-method-name">beforeSuite</span>
-                <br/>
-                <span class="ignored-method-name">afterTest</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -407,57 +403,45 @@ return data;
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">beforeSuite</span>
                 <br/>
-                <span class="ignored-method-name">beforeTest</span>
-                <br/>
                 <span class="ignored-method-name">verifyProductIntegratesWithCart</span>
                 <br/>
-                <span class="ignored-method-name">afterTest</span>
-                <br/>
                 <span class="ignored-method-name">afterSuite</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">AddCart.PurchaseSmokeTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">afterSuite</span>
-                <br/>
-                <span class="ignored-method-name">verifyCheckoutPageOpensWithProduct</span>
-                <br/>
-                <span class="ignored-method-name">beforeTest</span>
-                <br/>
-                <span class="ignored-method-name">afterTest</span>
-                <br/>
-                <span class="ignored-method-name">beforeSuite</span>
-                <br/>
-                <span class="ignored-method-name">verifyCartOpensSuccessfully</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">ContactCommunity.ContactCommunityFunctionalTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyContactCommunitySupportedAction50</span>
+                <span class="ignored-method-name">verifySupportedAction50</span>
+                <br/>
+                <span class="ignored-method-name">verifySupportHelpNavigation</span>
+                <br/>
+                <span class="ignored-method-name">verifyBrowserNavigation</span>
+                <br/>
+                <span class="ignored-method-name">verifySauceLabsCommunityLink</span>
+                <br/>
+                <span class="ignored-method-name">verifySupportedAction60</span>
                 <br/>
                 <span class="ignored-method-name">beforeSuite</span>
                 <br/>
-                <span class="ignored-method-name">verifySupportHelpNavigationIsAccessible</span>
+                <span class="ignored-method-name">afterSuite</span>
                 <br/>
-                <span class="ignored-method-name">verifyContactCommunitySupportedAction60</span>
+                <span class="ignored-method-name">verifySupportedAction55</span>
                 <br/>
-                <span class="ignored-method-name">verifySauceLabsCommunityLinkIsAccessible</span>
+                <span class="ignored-method-name">verifyExternalLink</span>
                 <br/>
-                <span class="ignored-method-name">beforeTest</span>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">AddCart.PurchaseSmokeTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
                 <br/>
-                <span class="ignored-method-name">verifySelectedExternalLinkOpensCorrectly</span>
-                <br/>
-                <span class="ignored-method-name">afterTest</span>
+                <span class="ignored-method-name">verifyCartOpensSuccessfully</span>
                 <br/>
                 <span class="ignored-method-name">afterSuite</span>
                 <br/>
-                <span class="ignored-method-name">verifyBrowserNavigationReturnsCorrectly</span>
-                <br/>
-                <span class="ignored-method-name">verifyContactCommunitySupportedAction55</span>
+                <span class="ignored-method-name">verifyCheckoutPageOpensWithProduct</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -466,13 +450,9 @@ return data;
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">afterSuite</span>
                 <br/>
-                <span class="ignored-method-name">afterTest</span>
-                <br/>
                 <span class="ignored-method-name">beforeSuite</span>
                 <br/>
                 <span class="ignored-method-name">verifyCommunitySupportNavigationIsAvailable</span>
-                <br/>
-                <span class="ignored-method-name">beforeTest</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -486,45 +466,33 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">ContactCommunity.ContactCommunityNegativeTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">beforeSuite</span>
-                <br/>
                 <span class="ignored-method-name">afterSuite</span>
                 <br/>
-                <span class="ignored-method-name">beforeTest</span>
-                <br/>
-                <span class="ignored-method-name">afterTest</span>
+                <span class="ignored-method-name">beforeSuite</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">Login.LoginSystemTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">beforeTest</span>
-                <br/>
-                <span class="ignored-method-name">afterSuite</span>
-                <br/>
-                <span class="ignored-method-name">afterTest</span>
-                <br/>
                 <span class="ignored-method-name">beforeSuite</span>
                 <br/>
-                <span class="ignored-method-name">verifyCompleteLoginToProductsFlow</span>
+                <span class="ignored-method-name">verifyLoginToProductsFlow</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">AddCart.PurchaseIntegrationTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">beforeSuite</span>
-                <br/>
                 <span class="ignored-method-name">verifyCheckoutIntegratesWithOrderCompletion</span>
-                <br/>
-                <span class="ignored-method-name">afterTest</span>
-                <br/>
-                <span class="ignored-method-name">afterSuite</span>
                 <br/>
                 <span class="ignored-method-name">verifyCartDetailsTransferToCheckout</span>
                 <br/>
-                <span class="ignored-method-name">beforeTest</span>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
                 <br/>
                 <span class="ignored-method-name">verifyProductToCartIntegration</span>
                 <br/>
@@ -533,27 +501,23 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">AddCart.PurchaseFunctionalTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">beforeTest</span>
-                <br/>
-                <span class="ignored-method-name">afterSuite</span>
-                <br/>
                 <span class="ignored-method-name">verifyProductCanBeAddedToCart</span>
-                <br/>
-                <span class="ignored-method-name">verifyProductPriceIsDisplayed</span>
-                <br/>
-                <span class="ignored-method-name">verifyAddedProductAppearsInCart</span>
                 <br/>
                 <span class="ignored-method-name">verifyProductCanBeRemoved</span>
                 <br/>
-                <span class="ignored-method-name">verifyCheckoutAcceptsCustomerDetails</span>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">verifyAddedProductAppearsInCart</span>
+                <br/>
+                <span class="ignored-method-name">verifyProductPriceIsDisplayed</span>
                 <br/>
                 <span class="ignored-method-name">verifyUserCanCompletePurchase</span>
                 <br/>
-                <span class="ignored-method-name">verifyOrderConfirmationIsDisplayed</span>
-                <br/>
                 <span class="ignored-method-name">beforeSuite</span>
                 <br/>
-                <span class="ignored-method-name">afterTest</span>
+                <span class="ignored-method-name">verifyOrderConfirmationIsDisplayed</span>
+                <br/>
+                <span class="ignored-method-name">verifyCheckoutAcceptsCustomerDetails</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -564,10 +528,6 @@ return data;
                 <br/>
                 <span class="ignored-method-name">afterSuite</span>
                 <br/>
-                <span class="ignored-method-name">beforeTest</span>
-                <br/>
-                <span class="ignored-method-name">afterTest</span>
-                <br/>
                 <span class="ignored-method-name">verifyPriceSortingBoundary</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
@@ -577,11 +537,18 @@ return data;
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">verifyProductsDisplayed</span>
                 <br/>
-                <span class="ignored-method-name">beforeTest</span>
+                <span class="ignored-method-name">beforeSuite</span>
                 <br/>
                 <span class="ignored-method-name">afterSuite</span>
                 <br/>
-                <span class="ignored-method-name">afterTest</span>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">AddCart.PurchaseBVATest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyPostalCodeBoundary</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
                 <br/>
                 <span class="ignored-method-name">beforeSuite</span>
                 <br/>
@@ -590,30 +557,24 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">Product.ProductSystemTest</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
                 <span class="ignored-method-name">verifyCompleteProductFlow</span>
                 <br/>
                 <span class="ignored-method-name">beforeSuite</span>
                 <br/>
-                <span class="ignored-method-name">afterSuite</span>
-                <br/>
-                <span class="ignored-method-name">beforeTest</span>
-                <br/>
-                <span class="ignored-method-name">afterTest</span>
-                <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">AddCart.PurchaseBVATest</span>
+              <span class="ignored-class-name">ContactCommunity.ContactCommunitySystemTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">beforeTest</span>
+                <span class="ignored-method-name">verifyCompleteApplicationToContactCommunityFlow</span>
                 <br/>
                 <span class="ignored-method-name">afterSuite</span>
                 <br/>
-                <span class="ignored-method-name">verifyPostalCodeBoundary</span>
+                <span class="ignored-method-name">verifyEndToEndContactCommunityScenario10</span>
                 <br/>
                 <span class="ignored-method-name">beforeSuite</span>
-                <br/>
-                <span class="ignored-method-name">afterTest</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -622,90 +583,53 @@ return data;
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">afterSuite</span>
                 <br/>
-                <span class="ignored-method-name">afterTest</span>
-                <br/>
                 <span class="ignored-method-name">beforeSuite</span>
-                <br/>
-                <span class="ignored-method-name">beforeTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">ContactCommunity.ContactCommunitySystemTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyEndToEndContactCommunityScenario10</span>
-                <br/>
-                <span class="ignored-method-name">beforeSuite</span>
-                <br/>
-                <span class="ignored-method-name">verifyCompleteApplicationToContactCommunityFlow</span>
-                <br/>
-                <span class="ignored-method-name">afterTest</span>
-                <br/>
-                <span class="ignored-method-name">beforeTest</span>
-                <br/>
-                <span class="ignored-method-name">afterSuite</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Login.LoginFunctionalTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">beforeTest</span>
-                <br/>
-                <span class="ignored-method-name">beforeSuite</span>
-                <br/>
-                <span class="ignored-method-name">afterSuite</span>
-                <br/>
-                <span class="ignored-method-name">verifyPasswordIsMasked</span>
-                <br/>
-                <span class="ignored-method-name">afterTest</span>
-                <br/>
-                <span class="ignored-method-name">verifyUsernameAcceptsValidInput</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">Login.LoginIntegrationTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">afterSuite</span>
-                <br/>
-                <span class="ignored-method-name">afterTest</span>
-                <br/>
-                <span class="ignored-method-name">beforeTest</span>
-                <br/>
                 <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
                 <br/>
                 <span class="ignored-method-name">verifyLoginIntegratesWithProduct</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">AddCart.PurchaseSystemTest</span>
+              <span class="ignored-class-name">Login.LoginFunctionalTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyCompletePurchaseFlow</span>
-                <br/>
-                <span class="ignored-method-name">beforeTest</span>
-                <br/>
                 <span class="ignored-method-name">afterSuite</span>
                 <br/>
                 <span class="ignored-method-name">beforeSuite</span>
                 <br/>
-                <span class="ignored-method-name">verifyPurchaseWithMultipleProducts</span>
+                <span class="ignored-method-name">verifyUsernameAcceptsValidInput</span>
                 <br/>
-                <span class="ignored-method-name">afterTest</span>
+                <span class="ignored-method-name">verifyPasswordIsMasked</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">Product.ProductNegativeTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">afterTest</span>
-                <br/>
                 <span class="ignored-method-name">afterSuite</span>
                 <br/>
                 <span class="ignored-method-name">beforeSuite</span>
                 <br/>
-                <span class="ignored-method-name">beforeTest</span>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">AddCart.PurchaseSystemTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">verifyPurchaseWithMultipleProducts</span>
+                <br/>
+                <span class="ignored-method-name">verifyCompletePurchaseFlow</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -714,45 +638,33 @@ return data;
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">verifyValidLogin</span>
                 <br/>
-                <span class="ignored-method-name">beforeSuite</span>
-                <br/>
-                <span class="ignored-method-name">afterTest</span>
-                <br/>
-                <span class="ignored-method-name">beforeTest</span>
-                <br/>
                 <span class="ignored-method-name">afterSuite</span>
                 <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">ContactCommunity.ContactCommunityIntegrationTest</span>
-              <div class="ignored-methods-div">
                 <span class="ignored-method-name">beforeSuite</span>
-                <br/>
-                <span class="ignored-method-name">verifyApplicationNavigationIntegratesWithExternalCommunityDestination</span>
-                <br/>
-                <span class="ignored-method-name">afterTest</span>
-                <br/>
-                <span class="ignored-method-name">afterSuite</span>
-                <br/>
-                <span class="ignored-method-name">beforeTest</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">ContactCommunity.ContactCommunityBVATest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">afterTest</span>
-                <br/>
-                <span class="ignored-method-name">verifyBoundaryConditionScenario15</span>
-                <br/>
                 <span class="ignored-method-name">verifyFirstAvailableNavigationOptionBoundary</span>
                 <br/>
-                <span class="ignored-method-name">beforeTest</span>
+                <span class="ignored-method-name">afterSuite</span>
                 <br/>
                 <span class="ignored-method-name">beforeSuite</span>
                 <br/>
+                <span class="ignored-method-name">verifyBoundaryConditionScenario15</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">ContactCommunity.ContactCommunityIntegrationTest</span>
+              <div class="ignored-methods-div">
                 <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">verifyApplicationNavigationIntegratesWithExternalCommunityDestination</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -761,19 +673,15 @@ return data;
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">afterSuite</span>
                 <br/>
-                <span class="ignored-method-name">afterTest</span>
-                <br/>
-                <span class="ignored-method-name">verifySortPriceHighToLow</span>
+                <span class="ignored-method-name">verifySortPriceLowToHigh</span>
                 <br/>
                 <span class="ignored-method-name">beforeSuite</span>
                 <br/>
-                <span class="ignored-method-name">verifySortPriceLowToHigh</span>
-                <br/>
-                <span class="ignored-method-name">beforeTest</span>
-                <br/>
-                <span class="ignored-method-name">verifySortNameAToZ</span>
+                <span class="ignored-method-name">verifySortPriceHighToLow</span>
                 <br/>
                 <span class="ignored-method-name">verifySortNameZToA</span>
+                <br/>
+                <span class="ignored-method-name">verifySortNameAToZ</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -790,136 +698,84 @@ return data;
                 <span class="method-name">beforeSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
-              <div class="configuration-test before">
-                <span class="method-name">beforeTest</span>
-                <span class="method-start">26 ms</span>
-              </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Login.LoginNegativeTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass</span>
-                <span class="method-start">50 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication(chrome)</span>
-                <span class="method-start">67 ms</span>
+                <span class="method-start">75 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyInvalidCredentialsShowError</span>
-                <span class="method-start">2594 ms</span>
+                <span class="method-start">4574 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=verifyInvalidCredentialsShowError status=SUCCESS method=LoginNegativeTest.verifyInv...)</span>
-                <span class="method-start">5952 ms</span>
+                <span class="method-name">closeBrowser([TestResult name=verifyInvalidCredentialsShowError status=SUCCESS method=LoginNegativeTest.verifyInv...)</span>
+                <span class="method-start">5980 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication(chrome)</span>
-                <span class="method-start">6327 ms</span>
+                <span class="method-start">6291 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLockedUserCannotLogin</span>
-                <span class="method-start">8133 ms</span>
+                <span class="method-start">10139 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=verifyLockedUserCannotLogin status=SUCCESS method=LoginNegativeTest.verifyLockedUse...)</span>
-                <span class="method-start">8915 ms</span>
+                <span class="method-name">closeBrowser([TestResult name=verifyLockedUserCannotLogin status=SUCCESS method=LoginNegativeTest.verifyLockedUse...)</span>
+                <span class="method-start">10714 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">9246 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Product.ProductNegativeTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass</span>
-                <span class="method-start">9249 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication(chrome)</span>
-                <span class="method-start">9250 ms</span>
+                <span class="method-start">10985 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUnauthorizedUserCannotAccessProducts</span>
-                <span class="method-start">10950 ms</span>
+                <span class="method-start">14871 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=verifyUnauthorizedUserCannotAccessProducts status=SUCCESS method=ProductNegativeTes...)</span>
-                <span class="method-start">11202 ms</span>
+                <span class="method-name">closeBrowser([TestResult name=verifyUnauthorizedUserCannotAccessProducts status=SUCCESS method=ProductNegativeTes...)</span>
+                <span class="method-start">15003 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">11509 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">AddCart.PurchaseNegativeTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass</span>
-                <span class="method-start">11510 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication(chrome)</span>
-                <span class="method-start">11511 ms</span>
+                <span class="method-start">15322 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyCheckoutRequiresMandatoryData</span>
-                <span class="method-start">13217 ms</span>
+                <span class="method-start">19209 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=verifyCheckoutRequiresMandatoryData status=SUCCESS method=PurchaseNegativeTest.veri...)</span>
-                <span class="method-start">14522 ms</span>
+                <span class="method-name">closeBrowser([TestResult name=verifyCheckoutRequiresMandatoryData status=SUCCESS method=PurchaseNegativeTest.veri...)</span>
+                <span class="method-start">20212 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">ContactCommunity.ContactCommunityNegativeTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass</span>
-                <span class="method-start">14858 ms</span>
-              </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">AddCart.PurchaseNegativeTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">14858 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">ContactCommunity.ContactCommunityNegativeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication(chrome)</span>
-                <span class="method-start">14859 ms</span>
+                <span class="method-start">20526 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyInvalidFooterDestinationIsRejected</span>
-                <span class="method-start">16516 ms</span>
+                <span class="method-start">24399 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=verifyInvalidFooterDestinationIsRejected status=SUCCESS method=ContactCommunityNega...)</span>
-                <span class="method-start">17455 ms</span>
+                <span class="method-name">closeBrowser([TestResult name=verifyInvalidFooterDestinationIsRejected status=SUCCESS method=ContactCommunityNega...)</span>
+                <span class="method-start">25053 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Login.LoginBVATest</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">17989 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">ContactCommunity.ContactCommunityNegativeTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">17989 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Login.LoginBVATest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">18038 ms</span>
+                <span class="method-start">25515 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

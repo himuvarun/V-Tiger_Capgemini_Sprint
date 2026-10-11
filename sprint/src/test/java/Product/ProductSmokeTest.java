@@ -19,7 +19,7 @@ public class ProductSmokeTest extends BaseClass {
         String password = excel.getDataByTestId("Login", "LOGIN-SMOKE-001", "Password");
 
         new LoginPage(driver).login(username, password);
-        Assert.assertTrue(new ProductPage(driver).getProductCount() > 0,"Products are not displayed");
+        Assert.assertTrue(new ProductPage(driver).count() > 0,"Products are not displayed");
         Reporter.log("Products are displayed successfully", true);
     }
 }

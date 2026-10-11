@@ -14,13 +14,18 @@ public class LoginSmokeTest extends BaseClass {
 	@Test(groups = {"Smoke", "Functional"})
 	public void verifyValidLogin() throws Exception {
 
-        ExcelUtility excel = new ExcelUtility();
-        String username = excel.getDataByTestId("Login", "LOGIN-SMOKE-001", "Username");
-        String password = excel.getDataByTestId("Login", "LOGIN-SMOKE-001", "Password");
-        String expectedTitle = excel.getDataByTestId("Login", "LOGIN-SMOKE-001", "ExpectedTitle");
+	    ExcelUtility excel = new ExcelUtility();
+	    String username = excel.getDataByTestId("Login", "LOGIN-SMOKE-001", "Username");
+	    String password = excel.getDataByTestId("Login", "LOGIN-SMOKE-001", "Password");
+	    String expectedTitle =excel.getDataByTestId("Login", "LOGIN-SMOKE-001", "ExpectedTitle");
 
-        new LoginPage(driver).login(username, password);
-        Assert.assertEquals(new ProductPage(driver).getPageTitle(),expectedTitle,"Valid login failed");
-        Reporter.log("Valid login completed successfully", true);
-    }
+	    LoginPage login = new LoginPage(driver);
+	    login.login(username, password);
+
+	    ProductPage product = new ProductPage(driver);
+	    String actualTitle = product.title();
+	    
+	    Assert.assertEquals(actualTitle, expectedTitle, "Valid login failed");
+	    Reporter.log("Valid login completed successfully", true);
+	}
 }

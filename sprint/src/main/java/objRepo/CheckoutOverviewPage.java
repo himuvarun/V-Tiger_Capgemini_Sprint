@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 public class CheckoutOverviewPage {
 
     @FindBy(id = "finish")
-    private WebElement finishButton;
+    private WebElement finish;
 
     @FindBy(className = "title")
     private WebElement title;
@@ -22,20 +22,20 @@ public class CheckoutOverviewPage {
         PageFactory.initElements(driver, this);
     }
 
-    public String getTitle() {
+    public String title() {
         return title.getText();
     }
 
-    public boolean containsProduct(String productName) {
+    public boolean contains(String name) {
         for (WebElement product : products) {
-            if (product.getText().trim().equalsIgnoreCase(productName.trim())) {
+            if (product.getText().trim().equalsIgnoreCase(name.trim())) {
                 return true;
             }
         }
         return false;
     }
 
-    public void finishOrder() {
-        finishButton.click();
+    public void finish() {
+        finish.click();
     }
 }

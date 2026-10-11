@@ -7,8 +7,6 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
 
-    private WebDriver driver;
-
     @FindBy(className = "login_logo")
     private WebElement logo;
 
@@ -16,19 +14,18 @@ public class HomePage {
     private WebElement username;
 
     public HomePage(WebDriver driver) {
-        this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
-    public boolean isLoginPageDisplayed() {
+    public boolean loginPage() {
         return logo.isDisplayed() && username.isDisplayed();
     }
 
-    public String getTitle() {
+    public String title(WebDriver driver) {
         return driver.getTitle();
     }
 
-    public void openInventoryDirectly() {
-        driver.get(driver.getCurrentUrl().replaceAll("/$", "") + "/inventory.html");
+    public void openProducts(WebDriver driver) {
+        driver.get(driver.getCurrentUrl().replaceAll("/$", "")+ "/inventory.html");
     }
 }
