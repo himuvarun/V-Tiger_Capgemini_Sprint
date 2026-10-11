@@ -17,7 +17,8 @@ public class PurchaseFunctionalTest extends BaseClass {
 
     private ExcelUtility excel = new ExcelUtility();
 
-    private void login() throws Exception {String username = excel.getDataByTestId("Login", "LOGIN-SMOKE-001", "Username");
+    private void login() throws Exception {
+    	String username = excel.getDataByTestId("Login", "LOGIN-SMOKE-001", "Username");
         String password = excel.getDataByTestId("Login", "LOGIN-SMOKE-001", "Password");
         new LoginPage(driver).login(username, password);
     }

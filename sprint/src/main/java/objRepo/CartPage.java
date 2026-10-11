@@ -28,8 +28,7 @@ public class CartPage {
     }
 
     public int count() {
-        return driver.findElements(
-                By.className("cart_item")).size();
+        return driver.findElements(By.className("cart_item")).size();
     }
 
     public void checkout() {

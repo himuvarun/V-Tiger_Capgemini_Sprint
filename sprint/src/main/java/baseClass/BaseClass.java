@@ -29,7 +29,6 @@ public class BaseClass {
     @Parameters("browser")
     @BeforeMethod(alwaysRun = true)
     public void launchApplication(@Optional("chrome") String browser) throws Exception {
-
         if (browser.equalsIgnoreCase("chrome")) {
             driver = new ChromeDriver();
         } else if (browser.equalsIgnoreCase("firefox")) {
@@ -40,9 +39,7 @@ public class BaseClass {
 
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
         driver.get(fileUtility.getDataFromProperties("swaglabs.url"));
-
         Reporter.log("Browser launched: " + browser, true);
     }
 

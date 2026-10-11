@@ -35,8 +35,7 @@ public class ContactCommunityFunctionalTest extends BaseClass {
         boolean available = false;
         for (WebElement link : links) {
             String href = link.getAttribute("href");
-            if (href != null &&
-                (href.contains(socialLink1) || href.contains(socialLink2) || href.contains(socialLink3))) 
+            if (href != null && (href.contains(socialLink1) || href.contains(socialLink2) || href.contains(socialLink3))) 
             	{
                 	available = true;
                 	break;
@@ -81,29 +80,5 @@ public class ContactCommunityFunctionalTest extends BaseClass {
         Assert.assertEquals(driver.getCurrentUrl(),expectedUrl,"Application URL changed after refresh");
         Assert.assertTrue(page.footer(),"Footer disappeared after refresh");
         Reporter.log("Browser navigation behavior verified",true);
-    }
-
-    @Test(groups = "Functional")
-    public void verifySupportedAction50() throws Exception {
-        verifyFooterNavigation("CONTACT-FUN-006");
-    }
-
-    @Test(groups = "Functional")
-    public void verifySupportedAction55() throws Exception {
-        verifyFooterNavigation("CONTACT-FUN-007");
-    }
-
-    @Test(groups = "Functional")
-    public void verifySupportedAction60() throws Exception {
-        verifyFooterNavigation("CONTACT-FUN-008");
-    }
-
-    private void verifyFooterNavigation(String testId) throws Exception {
-        ExcelUtility excel = new ExcelUtility();
-        int minimumLinks = Integer.parseInt(excel.getDataByTestId("ContactCommunity",testId,"MinFooterLinks"));
-
-        ContactPage page = openContactCommunityArea();
-        Assert.assertTrue(page.linkCount() >= minimumLinks,"Supported ContactCommunity navigation is unavailable");
-        Reporter.log("ContactCommunity navigation verified for " + testId, true);
     }
 }

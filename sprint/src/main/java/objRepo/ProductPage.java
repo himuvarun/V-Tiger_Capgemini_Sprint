@@ -33,8 +33,7 @@ public class ProductPage {
     }
 
     public int count() {
-        return driver.findElements(
-                By.className("inventory_item")).size();
+        return driver.findElements(By.className("inventory_item")).size();
     }
     public void addProduct(String name) {
         String xpath ="//div[text()='" + name + "']/ancestor::div[@class='inventory_item']//button";
