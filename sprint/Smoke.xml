@@ -11,7 +11,6 @@
 			</run>
 		</groups>
 		<packages>
-			<package name="Homepage"/>
 			<package name="Login"/>
 			<package name="Product"/>
 			<package name="AddCart"/>

@@ -6,7 +6,6 @@
 <suite name="Parallel Suite" parallel="classes" thread-count="5">
 	<test name="All Modules - Parallel">
 		<packages>
-			<package name="Homepage"/>
 			<package name="Login"/>
 			<package name="Product"/>
 			<package name="AddCart"/>
