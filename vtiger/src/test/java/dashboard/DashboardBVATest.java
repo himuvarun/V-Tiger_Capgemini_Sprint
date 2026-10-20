@@ -17,20 +17,9 @@ public class DashboardBVATest extends BaseClass {
         ExcelUtility excel = new ExcelUtility();
 
         String testId = "DB_009";
-
         DashboardPage dashboardPage = new DashboardPage(driver);
-
         dashboardPage.openDashboard();
-
         int widgetCount = dashboardPage.getDashboardWidgetCount();
-
-        Assert.assertTrue(
-                widgetCount >= 1,
-                excel.getDataByTestId(
-                        "DashboardData",
-                        testId,
-                        "ExpectedMessage"
-                )
-        );
+        Assert.assertTrue(widgetCount >= 1,excel.getDataByTestId("DashboardData",testId,"ExpectedMessage"));
     }
 }

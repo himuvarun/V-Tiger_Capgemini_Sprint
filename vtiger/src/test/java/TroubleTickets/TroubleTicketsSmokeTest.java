@@ -16,25 +16,11 @@ public class TroubleTicketsSmokeTest extends BaseClass {
         ExcelUtility excel = new ExcelUtility();
 
         String testId = "TT_001";
-
-        TroubleTicketsPage ticketPage =
-                new TroubleTicketsPage(driver);
-
+        TroubleTicketsPage ticketPage = new TroubleTicketsPage(driver);
         ticketPage.clickTroubleTickets();
-
         ticketPage.clickCreateTicket();
 
-        Assert.assertTrue(
-                driver.getCurrentUrl().contains("HelpDesk"),
-                "Trouble Tickets Create page was not opened"
-        );
-
-        Reporter.log(
-                excel.getDataByTestId(
-                        "TroubleTicketsData",
-                        testId,
-                        "Description"),
-                true
-        );
+        Assert.assertTrue(driver.getCurrentUrl().contains("HelpDesk"),"Trouble Tickets Create page was not opened");
+        Reporter.log(excel.getDataByTestId("TroubleTicketsData",testId,"Description"),true);
     }
 }

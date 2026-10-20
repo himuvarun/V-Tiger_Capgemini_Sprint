@@ -17,19 +17,11 @@ public class DashboardNegativeTest extends BaseClass {
         ExcelUtility excel = new ExcelUtility();
 
         String testId = "DB_007";
-
         DashboardPage dashboardPage = new DashboardPage(driver);
-
         dashboardPage.openDashboard();
         dashboardPage.refreshDashboard();
-
         Assert.assertTrue(
                 dashboardPage.isDashboardPageDisplayed(),
-                excel.getDataByTestId(
-                        "DashboardData",
-                        testId,
-                        "ExpectedMessage"
-                )
-        );
+                excel.getDataByTestId("DashboardData",testId,"ExpectedMessage"));
     }
 }

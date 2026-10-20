@@ -17,40 +17,23 @@ public class DashboardSmokeTest extends BaseClass {
         ExcelUtility excel = new ExcelUtility();
 
         String testId = "DB_001";
-
         DashboardPage dashboardPage = new DashboardPage(driver);
-
         dashboardPage.openDashboard();
         dashboardPage.waitForDashboardToLoad();
-
         Assert.assertTrue(
                 dashboardPage.isDashboardPageDisplayed(),
-                excel.getDataByTestId(
-                        "DashboardData",
-                        testId,
-                        "ExpectedMessage"
-                )
-        );
+                excel.getDataByTestId("DashboardData",testId,"ExpectedMessage"));
     }
 
     @Test(groups = "Smoke")
     public void verifyDashboardPageDisplayed() throws IOException {
 
         ExcelUtility excel = new ExcelUtility();
-
         String testId = "DB_002";
-
         DashboardPage dashboardPage = new DashboardPage(driver);
-
         dashboardPage.openDashboard();
-
         Assert.assertTrue(
                 dashboardPage.isDashboardPageDisplayed(),
-                excel.getDataByTestId(
-                        "DashboardData",
-                        testId,
-                        "ExpectedMessage"
-                )
-        );
+                excel.getDataByTestId("DashboardData",testId,"ExpectedMessage"));
     }
 }

@@ -16,30 +16,13 @@ public class CampaignFunctionalTest extends BaseClass {
         ExcelUtility excel = new ExcelUtility();
 
         String testId = "CM_002";
-
-        String campaignName =
-                excel.getDataByTestId(
-                        "CampaignData", testId, "CampaignName");
-
-        String assignedTo =
-                excel.getDataByTestId(
-                        "CampaignData", testId, "AssignedTo");
-
-        String status =
-                excel.getDataByTestId(
-                        "CampaignData", testId, "Status");
-
-        String type =
-                excel.getDataByTestId(
-                        "CampaignData", testId, "Type");
-
-        String closingDate =
-                excel.getDataByTestId(
-                        "CampaignData", testId, "ClosingDate");
-
-        CampaignPage campaignPage =
-                new CampaignPage(driver);
-
+        String campaignName = excel.getDataByTestId("CampaignData", testId, "CampaignName");
+        String assignedTo = excel.getDataByTestId("CampaignData", testId, "AssignedTo");
+        String status = excel.getDataByTestId("CampaignData", testId, "Status");
+        String type = excel.getDataByTestId("CampaignData", testId, "Type");
+        String closingDate = excel.getDataByTestId("CampaignData", testId, "ClosingDate");
+        CampaignPage campaignPage = new CampaignPage(driver);
+        
         campaignPage.clickCampaigns();
         campaignPage.clickCreateCampaign();
 
@@ -48,21 +31,9 @@ public class CampaignFunctionalTest extends BaseClass {
         campaignPage.selectCampaignStatus(status);
         campaignPage.selectCampaignType(type);
         campaignPage.enterClosingDate(closingDate);
-
         campaignPage.clickSave();
 
-        Assert.assertTrue(
-                driver.getCurrentUrl().contains("DetailView"),
-                "Campaign was not created successfully"
-        );
-
-        Reporter.log(
-                excel.getDataByTestId(
-                        "CampaignData",
-                        testId,
-                        "Description"
-                ),
-                true
-        );
+        Assert.assertTrue(driver.getCurrentUrl().contains("DetailView"),"Campaign was not created successfully");
+        Reporter.log(excel.getDataByTestId("CampaignData",testId,"Description"),true);
     }
 }

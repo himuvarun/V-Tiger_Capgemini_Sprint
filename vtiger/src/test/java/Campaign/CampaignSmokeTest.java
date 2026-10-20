@@ -16,22 +16,11 @@ public class CampaignSmokeTest extends BaseClass {
         ExcelUtility excel = new ExcelUtility();
 
         String testId = "CM_001";
-
         CampaignPage campaignPage = new CampaignPage(driver);
         System.out.println("TEST DRIVER = " + driver);
         campaignPage.clickCampaigns();
-
         campaignPage.clickCreateCampaign();
-
         Assert.assertTrue(driver.getCurrentUrl().contains("EditView"),"Campaign Create page is not displayed");
-
-        Reporter.log(
-                excel.getDataByTestId(
-                        "CampaignData",
-                        testId,
-                        "Description"
-                ),
-                true
-        );
+        Reporter.log(excel.getDataByTestId("CampaignData",testId,"Description"),true);
     }
 }

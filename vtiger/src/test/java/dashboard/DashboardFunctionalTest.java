@@ -17,21 +17,10 @@ public class DashboardFunctionalTest extends BaseClass {
         ExcelUtility excel = new ExcelUtility();
 
         String testId = "DB_003";
-
         DashboardPage dashboardPage = new DashboardPage(driver);
-
         dashboardPage.openDashboard();
-
         String title = dashboardPage.getDashboardPageTitle();
-
-        Assert.assertFalse(
-                title.isEmpty(),
-                excel.getDataByTestId(
-                        "DashboardData",
-                        testId,
-                        "ExpectedMessage"
-                )
-        );
+        Assert.assertFalse(title.isEmpty(),excel.getDataByTestId("DashboardData",testId,"ExpectedMessage"));
     }
 
     @Test(groups = "Functional")
@@ -40,19 +29,9 @@ public class DashboardFunctionalTest extends BaseClass {
         ExcelUtility excel = new ExcelUtility();
 
         String testId = "DB_004";
-
         DashboardPage dashboardPage = new DashboardPage(driver);
-
         dashboardPage.openDashboard();
-
-        Assert.assertTrue(
-                dashboardPage.getCurrentUrl().contains("module=Dashboard"),
-                excel.getDataByTestId(
-                        "DashboardData",
-                        testId,
-                        "ExpectedMessage"
-                )
-        );
+        Assert.assertTrue(dashboardPage.getCurrentUrl().contains("module=Dashboard"),excel.getDataByTestId("DashboardData",testId,"ExpectedMessage"));
     }
 
     @Test(groups = "Functional")
@@ -61,34 +40,19 @@ public class DashboardFunctionalTest extends BaseClass {
         ExcelUtility excel = new ExcelUtility();
 
         String testId = "DB_005";
-
         DashboardPage dashboardPage = new DashboardPage(driver);
-
         dashboardPage.openDashboard();
-
         int widgetCount = dashboardPage.getDashboardWidgetCount();
-
-        Assert.assertTrue(
-                widgetCount > 0,
-                excel.getDataByTestId(
-                        "DashboardData",
-                        testId,
-                        "ExpectedMessage"
-                )
-        );
+        Assert.assertTrue(widgetCount > 0,excel.getDataByTestId("DashboardData",testId,"ExpectedMessage"));
     }
 
     @Test(groups = "Functional")
     public void verifyDashboardCharts() throws IOException {
 
         ExcelUtility excel = new ExcelUtility();
-
         String testId = "DB_006";
-
         DashboardPage dashboardPage = new DashboardPage(driver);
-
         dashboardPage.openDashboard();
-
         Assert.assertTrue(dashboardPage.areChartsPresent(),excel.getDataByTestId("DashboardData",testId,"ExpectedMessage"));
     }
 }

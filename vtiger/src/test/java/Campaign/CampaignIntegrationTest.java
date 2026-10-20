@@ -17,55 +17,19 @@ public class CampaignIntegrationTest extends BaseClass {
         ExcelUtility excel = new ExcelUtility();
 
         String testId = "CM_013";
-
-        CampaignPage campaignPage =
-                new CampaignPage(driver);
-
+        CampaignPage campaignPage = new CampaignPage(driver);
         campaignPage.clickCampaigns();
-
-        Assert.assertTrue(
-                driver.getCurrentUrl().contains("Campaign"),
-                "Campaign module navigation failed"
-        );
-
+        Assert.assertTrue(driver.getCurrentUrl().contains("Campaign"),"Campaign module navigation failed");
         campaignPage.clickCreateCampaign();
-
-        campaignPage.enterCampaignName(
-                excel.getDataByTestId(
-                        "CampaignData", testId, "CampaignName"));
-
-        campaignPage.selectAssignedTo(
-                excel.getDataByTestId(
-                        "CampaignData", testId, "AssignedTo"));
-
-        campaignPage.selectCampaignStatus(
-                excel.getDataByTestId(
-                        "CampaignData", testId, "Status"));
-
-        campaignPage.selectCampaignType(
-                excel.getDataByTestId(
-                        "CampaignData", testId, "Type"));
-
-        campaignPage.enterClosingDate(
-                excel.getDataByTestId(
-                        "CampaignData", testId, "ClosingDate"));
-
+        campaignPage.enterCampaignName(excel.getDataByTestId("CampaignData", testId, "CampaignName"));
+        campaignPage.selectAssignedTo(excel.getDataByTestId("CampaignData", testId, "AssignedTo"));
+        campaignPage.selectCampaignStatus(excel.getDataByTestId("CampaignData", testId, "Status"));
+        campaignPage.selectCampaignType(excel.getDataByTestId("CampaignData", testId, "Type"));
+        campaignPage.enterClosingDate(excel.getDataByTestId("CampaignData", testId, "ClosingDate"));
         campaignPage.clickSave();
 
-        Assert.assertTrue(
-                driver.getCurrentUrl().contains("DetailView"),
-                "Campaign creation integration failed"
-        );
-
-        Reporter.log(
-                excel.getDataByTestId(
-                        "CampaignData", testId, "Description"),
-                true
-        );
-
-        Reporter.log(
-                "Campaign navigation and creation integration verified",
-                true
-        );
+        Assert.assertTrue(driver.getCurrentUrl().contains("DetailView"),"Campaign creation integration failed");
+        Reporter.log(excel.getDataByTestId("CampaignData", testId, "Description"),true);
+        Reporter.log("Campaign navigation and creation integration verified",true);
     }
 }

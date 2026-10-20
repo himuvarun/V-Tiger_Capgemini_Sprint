@@ -17,20 +17,11 @@ public class DashboardSystemTest extends BaseClass {
         ExcelUtility excel = new ExcelUtility();
 
         String testId = "DB_011";
-
         DashboardPage dashboardPage = new DashboardPage(driver);
-
         dashboardPage.openDashboard();
-
         dashboardPage.scrollToBottom();
-
         Assert.assertTrue(
                 dashboardPage.getCurrentScrollPosition() > 0,
-                excel.getDataByTestId(
-                        "DashboardData",
-                        testId,
-                        "ExpectedMessage"
-                )
-        );
+                excel.getDataByTestId("DashboardData",testId,"ExpectedMessage"));
     }
 }
