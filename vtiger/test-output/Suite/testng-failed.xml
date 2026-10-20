@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="BVATest(failed)">
+    <groups>
+      <run>
+        <include name="BVA"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Campaign.CampaignBVATest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyMinimumCampaignName"/>
+        </methods>
+      </class> <!-- Campaign.CampaignBVATest -->
+      <class name="TroubleTickets.TroubleTicketsBVATest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyMinimumTicketTitle"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TroubleTickets.TroubleTicketsBVATest -->
+      <class name="dashboard.DashboardBVATest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyMinimumDashboardWidget"/>
+        </methods>
+      </class> <!-- dashboard.DashboardBVATest -->
+    </classes>
+  </test> <!-- BVATest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

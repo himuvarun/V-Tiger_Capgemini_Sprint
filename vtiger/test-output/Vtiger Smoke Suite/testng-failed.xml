@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Vtiger Smoke Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Smoke Tests(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="leads.LeadsSmokeTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyLeadsCreatePageNavigation"/>
+        </methods>
+      </class> <!-- leads.LeadsSmokeTest -->
+      <class name="dashboard.DashboardSmokeTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyDashboardPageDisplayed"/>
+          <include name="verifyDashboardNavigation"/>
+        </methods>
+      </class> <!-- dashboard.DashboardSmokeTest -->
+      <class name="TroubleTickets.TroubleTicketsSmokeTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyTroubleTicketsCreatePage"/>
+        </methods>
+      </class> <!-- TroubleTickets.TroubleTicketsSmokeTest -->
+      <class name="Campaign.CampaignSmokeTest">
+        <methods>
+          <include name="verifyCampaignPageNavigation"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Campaign.CampaignSmokeTest -->
+    </classes>
+  </test> <!-- Smoke Tests(failed) -->
+</suite> <!-- Failed suite [Vtiger Smoke Suite] -->

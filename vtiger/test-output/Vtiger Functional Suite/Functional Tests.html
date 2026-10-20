@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>TestNG:  Functional Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Functional Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Oct 17 08:07:31 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>125 seconds (125188 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>Functional </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Campaign.CampaignFunctionalTest.verifyCampaignWithoutType()'><b>verifyCampaignWithoutType</b><br>Test class: Campaign.CampaignFunctionalTest<br/>
+<a href="#Output-1502843539" onClick='toggleBox("Output-1502843539", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1502843539" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1502843539">
+Create Campaign without Campaign Type<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Campaign.CampaignFunctionalTest@8462f31</td></tr>
+<tr>
+<td title='leads.LeadsFunctionalTest.verifyLeadCreationWithValidDetails()'><b>verifyLeadCreationWithValidDetails</b><br>Test class: leads.LeadsFunctionalTest<br/>
+<a href="#Output-1562912969" onClick='toggleBox("Output-1562912969", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1562912969" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1562912969">
+Functional / System - Create Lead with all valid details<br/>
+Lead created successfully with valid details<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>leads.LeadsFunctionalTest@15043a2f</td></tr>
+<tr>
+<td title='Campaign.CampaignFunctionalTest.verifyCampaignCreationWithValidDetails()'><b>verifyCampaignCreationWithValidDetails</b><br>Test class: Campaign.CampaignFunctionalTest<br/>
+<a href="#Output-403930795" onClick='toggleBox("Output-403930795", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-403930795" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-403930795">
+Create Campaign with valid details<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Campaign.CampaignFunctionalTest@8462f31</td></tr>
+<tr>
+<td title='dashboard.DashboardFunctionalTest.verifyDashboardTitle()'><b>verifyDashboardTitle</b><br>Test class: dashboard.DashboardFunctionalTest</td>
+<td></td>
+<td>1</td>
+<td>dashboard.DashboardFunctionalTest@5ddeb7cb</td></tr>
+<tr>
+<td title='dashboard.DashboardFunctionalTest.verifyDashboardURL()'><b>verifyDashboardURL</b><br>Test class: dashboard.DashboardFunctionalTest</td>
+<td></td>
+<td>1</td>
+<td>dashboard.DashboardFunctionalTest@5ddeb7cb</td></tr>
+<tr>
+<td title='TroubleTickets.TroubleTicketsFunctionalTest.verifyValidTicketCreation()'><b>verifyValidTicketCreation</b><br>Test class: TroubleTickets.TroubleTicketsFunctionalTest<br/>
+<a href="#Output-1241878008" onClick='toggleBox("Output-1241878008", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1241878008" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1241878008">
+Trouble Ticket created successfully<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>TroubleTickets.TroubleTicketsFunctionalTest@24569dba</td></tr>
+<tr>
+<td title='dashboard.DashboardFunctionalTest.verifyDashboardCharts()'><b>verifyDashboardCharts</b><br>Test class: dashboard.DashboardFunctionalTest</td>
+<td></td>
+<td>1</td>
+<td>dashboard.DashboardFunctionalTest@5ddeb7cb</td></tr>
+<tr>
+<td title='dashboard.DashboardFunctionalTest.verifyDashboardWidgets()'><b>verifyDashboardWidgets</b><br>Test class: dashboard.DashboardFunctionalTest</td>
+<td></td>
+<td>2</td>
+<td>dashboard.DashboardFunctionalTest@5ddeb7cb</td></tr>
+</table><p>
+</body>
+</html>

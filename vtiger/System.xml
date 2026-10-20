@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Vtiger System Suite">
+
+    <test name="System Tests">
+
+        <groups>
+            <run>
+                <include name="System"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="leads.LeadsSystemTest"/>
+            <class name="Campaign.CampaignSystemTest"/>
+            <class name="TroubleTickets.TroubleTicketsSystemTest"/>
+            <class name="dashboard.DashboardSystemTest"/>
+        </classes>
+
+    </test>
+
+</suite>

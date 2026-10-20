@@ -1,0 +1,401 @@
+<html>
+<head>
+<title>TestNG:  Edge - All Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Edge - All Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>32/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Oct 19 15:14:58 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>752 seconds (752582 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='leads.LeadsNegativeTest.verifyLeadWithoutAssignedTo()'><b>verifyLeadWithoutAssignedTo</b><br>Test class: leads.LeadsNegativeTest<br/>
+<a href="#Output-1475041579" onClick='toggleBox("Output-1475041579", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1475041579" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1475041579">
+Expected: Assigned To cannot be none<br/>
+Actual: Assigned To cannot be none<br/>
+Negative / EP - Create Lead without mandatory Assigned To<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>leads.LeadsNegativeTest@14dd7b39</td></tr>
+<tr>
+<td title='dashboard.DashboardIntegrationTest.verifyDashboardEndToEnd()'><b>verifyDashboardEndToEnd</b><br>Test class: dashboard.DashboardIntegrationTest</td>
+<td></td>
+<td>21</td>
+<td>dashboard.DashboardIntegrationTest@465232e9</td></tr>
+<tr>
+<td title='TroubleTickets.TroubleTicketsIntegrationTest.verifyTicketWithDifferentCategory()'><b>verifyTicketWithDifferentCategory</b><br>Test class: TroubleTickets.TroubleTicketsIntegrationTest<br/>
+<a href="#Output-278302421" onClick='toggleBox("Output-278302421", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-278302421" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-278302421">
+Ticket with different category created successfully<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>TroubleTickets.TroubleTicketsIntegrationTest@3e0e1046</td></tr>
+<tr>
+<td title='leads.LeadsIntegrationTest.verifyApplicationNavigationIntegratesWithLeadCreation()'><b>verifyApplicationNavigationIntegratesWithLeadCreation</b><br>Test class: leads.LeadsIntegrationTest<br/>
+<a href="#Output-1204335757" onClick='toggleBox("Output-1204335757", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1204335757" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1204335757">
+System / Acceptance - Create Lead using second unique valid dataset<br/>
+Application navigation and Lead creation integration verified<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>leads.LeadsIntegrationTest@5dafbe45</td></tr>
+<tr>
+<td title='leads.LeadsBVATest.verifyMinimumFirstNameBoundary()'><b>verifyMinimumFirstNameBoundary</b><br>Test class: leads.LeadsBVATest<br/>
+<a href="#Output-1841069620" onClick='toggleBox("Output-1841069620", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1841069620" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1841069620">
+BVA / Functional - Verify minimum First Name value<br/>
+Minimum First Name boundary verified<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>leads.LeadsBVATest@66ea810</td></tr>
+<tr>
+<td title='TroubleTickets.TroubleTicketsSmokeTest.verifyTroubleTicketsCreatePage()'><b>verifyTroubleTicketsCreatePage</b><br>Test class: TroubleTickets.TroubleTicketsSmokeTest<br/>
+<a href="#Output-661850427" onClick='toggleBox("Output-661850427", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-661850427" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-661850427">
+Smoke - Navigate to Trouble Tickets Create page<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>TroubleTickets.TroubleTicketsSmokeTest@12591ac8</td></tr>
+<tr>
+<td title='Campaign.CampaignBVATest.verifyMinimumCampaignName()'><b>verifyMinimumCampaignName</b><br>Test class: Campaign.CampaignBVATest<br/>
+<a href="#Output-220062807" onClick='toggleBox("Output-220062807", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-220062807" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-220062807">
+Minimum Campaign Name<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>Campaign.CampaignBVATest@f68f0dc</td></tr>
+<tr>
+<td title='leads.LeadsSystemTest.verifySecondUniqueLeadCreation()'><b>verifySecondUniqueLeadCreation</b><br>Test class: leads.LeadsSystemTest<br/>
+<a href="#Output-1467665908" onClick='toggleBox("Output-1467665908", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1467665908" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1467665908">
+System / Acceptance - Create Lead using second unique valid dataset<br/>
+Second unique Lead creation verified<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>leads.LeadsSystemTest@6cd24612</td></tr>
+<tr>
+<td title='TroubleTickets.TroubleTicketsNegativeTest.verifyTicketWithoutTitle()'><b>verifyTicketWithoutTitle</b><br>Test class: TroubleTickets.TroubleTicketsNegativeTest<br/>
+<a href="#Output-2116508659" onClick='toggleBox("Output-2116508659", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2116508659" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2116508659">
+Expected: Title cannot be none<br/>
+Actual: Title cannot be none<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>TroubleTickets.TroubleTicketsNegativeTest@38145825</td></tr>
+<tr>
+<td title='dashboard.DashboardIntegrationTest.verifyDashboardFromAnotherModule()'><b>verifyDashboardFromAnotherModule</b><br>Test class: dashboard.DashboardIntegrationTest</td>
+<td></td>
+<td>18</td>
+<td>dashboard.DashboardIntegrationTest@465232e9</td></tr>
+<tr>
+<td title='Campaign.CampaignSmokeTest.verifyCampaignPageNavigation()'><b>verifyCampaignPageNavigation</b><br>Test class: Campaign.CampaignSmokeTest<br/>
+<a href="#Output-1076672630" onClick='toggleBox("Output-1076672630", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1076672630" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1076672630">
+Smoke - Navigate to Campaign Create page<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Campaign.CampaignSmokeTest@2254127a</td></tr>
+<tr>
+<td title='dashboard.DashboardBVATest.verifyMinimumDashboardWidget()'><b>verifyMinimumDashboardWidget</b><br>Test class: dashboard.DashboardBVATest</td>
+<td></td>
+<td>19</td>
+<td>dashboard.DashboardBVATest@1e4f4a5c</td></tr>
+<tr>
+<td title='leads.LeadsFunctionalTest.verifyLeadCreationWithValidDetails()'><b>verifyLeadCreationWithValidDetails</b><br>Test class: leads.LeadsFunctionalTest<br/>
+<a href="#Output-1764169850" onClick='toggleBox("Output-1764169850", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1764169850" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1764169850">
+Functional / System - Create Lead with all valid details<br/>
+Lead created successfully with valid details<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>leads.LeadsFunctionalTest@2d0399f4</td></tr>
+<tr>
+<td title='dashboard.DashboardFunctionalTest.verifyDashboardTitle()'><b>verifyDashboardTitle</b><br>Test class: dashboard.DashboardFunctionalTest</td>
+<td></td>
+<td>18</td>
+<td>dashboard.DashboardFunctionalTest@7dc19a70</td></tr>
+<tr>
+<td title='leads.LeadsBVATest.verifyPostalCodeBoundary()'><b>verifyPostalCodeBoundary</b><br>Test class: leads.LeadsBVATest<br/>
+<a href="#Output-484225597" onClick='toggleBox("Output-484225597", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-484225597" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-484225597">
+BVA - Verify Postal Code boundary value<br/>
+Postal Code boundary scenario verified<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>leads.LeadsBVATest@66ea810</td></tr>
+<tr>
+<td title='dashboard.DashboardFunctionalTest.verifyDashboardURL()'><b>verifyDashboardURL</b><br>Test class: dashboard.DashboardFunctionalTest</td>
+<td></td>
+<td>18</td>
+<td>dashboard.DashboardFunctionalTest@7dc19a70</td></tr>
+<tr>
+<td title='dashboard.DashboardSystemTest.verifyDashboardScrollToBottom()'><b>verifyDashboardScrollToBottom</b><br>Test class: dashboard.DashboardSystemTest</td>
+<td></td>
+<td>18</td>
+<td>dashboard.DashboardSystemTest@37313c65</td></tr>
+<tr>
+<td title='Campaign.CampaignIntegrationTest.verifyCampaignNavigationAndCreationIntegration()'><b>verifyCampaignNavigationAndCreationIntegration</b><br>Test class: Campaign.CampaignIntegrationTest<br/>
+<a href="#Output-1249646361" onClick='toggleBox("Output-1249646361", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1249646361" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1249646361">
+Create Advertisement Campaign<br/>
+Campaign navigation and creation integration verified<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>Campaign.CampaignIntegrationTest@14bdbc74</td></tr>
+<tr>
+<td title='leads.LeadsSystemTest.verifyCompleteLeadCreationFlow()'><b>verifyCompleteLeadCreationFlow</b><br>Test class: leads.LeadsSystemTest<br/>
+<a href="#Output-1230952633" onClick='toggleBox("Output-1230952633", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1230952633" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1230952633">
+Functional / System - Create Lead with all valid details<br/>
+System level Lead creation verified<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>leads.LeadsSystemTest@6cd24612</td></tr>
+<tr>
+<td title='leads.LeadsNegativeTest.verifyLeadWithoutLastName()'><b>verifyLeadWithoutLastName</b><br>Test class: leads.LeadsNegativeTest<br/>
+<a href="#Output-2091119496" onClick='toggleBox("Output-2091119496", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2091119496" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2091119496">
+Expected: Last Name cannot be empty<br/>
+Actual: Last Name cannot be empty<br/>
+Negative / EP - Create Lead without mandatory Last Name<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>leads.LeadsNegativeTest@14dd7b39</td></tr>
+<tr>
+<td title='Campaign.CampaignNegativeTest.verifyCampaignWithoutName()'><b>verifyCampaignWithoutName</b><br>Test class: Campaign.CampaignNegativeTest<br/>
+<a href="#Output-383716724" onClick='toggleBox("Output-383716724", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-383716724" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-383716724">
+Expected: Campaign Name cannot be empty<br/>
+Actual: Campaign Name cannot be empty<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>Campaign.CampaignNegativeTest@2f953efd</td></tr>
+<tr>
+<td title='Campaign.CampaignSystemTest.verifyActiveCampaignCreation()'><b>verifyActiveCampaignCreation</b><br>Test class: Campaign.CampaignSystemTest<br/>
+<a href="#Output-317370561" onClick='toggleBox("Output-317370561", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-317370561" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-317370561">
+Create Active Campaign<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>Campaign.CampaignSystemTest@d2de489</td></tr>
+<tr>
+<td title='TroubleTickets.TroubleTicketsSystemTest.verifyHighPriorityTicket()'><b>verifyHighPriorityTicket</b><br>Test class: TroubleTickets.TroubleTicketsSystemTest<br/>
+<a href="#Output-1736489323" onClick='toggleBox("Output-1736489323", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1736489323" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1736489323">
+High Priority Ticket created successfully<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>TroubleTickets.TroubleTicketsSystemTest@1b66c0fb</td></tr>
+<tr>
+<td title='dashboard.DashboardSmokeTest.verifyDashboardNavigation()'><b>verifyDashboardNavigation</b><br>Test class: dashboard.DashboardSmokeTest</td>
+<td></td>
+<td>18</td>
+<td>dashboard.DashboardSmokeTest@24c1b2d2</td></tr>
+<tr>
+<td title='TroubleTickets.TroubleTicketsFunctionalTest.verifyValidTicketCreation()'><b>verifyValidTicketCreation</b><br>Test class: TroubleTickets.TroubleTicketsFunctionalTest<br/>
+<a href="#Output-938871628" onClick='toggleBox("Output-938871628", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-938871628" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-938871628">
+Trouble Ticket created successfully<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>TroubleTickets.TroubleTicketsFunctionalTest@5a7fe64f</td></tr>
+<tr>
+<td title='TroubleTickets.TroubleTicketsBVATest.verifyMinimumTicketTitle()'><b>verifyMinimumTicketTitle</b><br>Test class: TroubleTickets.TroubleTicketsBVATest<br/>
+<a href="#Output-657065104" onClick='toggleBox("Output-657065104", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-657065104" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-657065104">
+Minimum Ticket Title accepted successfully<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>TroubleTickets.TroubleTicketsBVATest@41330d4f</td></tr>
+<tr>
+<td title='dashboard.DashboardSmokeTest.verifyDashboardPageDisplayed()'><b>verifyDashboardPageDisplayed</b><br>Test class: dashboard.DashboardSmokeTest</td>
+<td></td>
+<td>18</td>
+<td>dashboard.DashboardSmokeTest@24c1b2d2</td></tr>
+<tr>
+<td title='dashboard.DashboardFunctionalTest.verifyDashboardWidgets()'><b>verifyDashboardWidgets</b><br>Test class: dashboard.DashboardFunctionalTest</td>
+<td></td>
+<td>19</td>
+<td>dashboard.DashboardFunctionalTest@7dc19a70</td></tr>
+<tr>
+<td title='Campaign.CampaignFunctionalTest.verifyCampaignCreationWithValidDetails()'><b>verifyCampaignCreationWithValidDetails</b><br>Test class: Campaign.CampaignFunctionalTest<br/>
+<a href="#Output-674278285" onClick='toggleBox("Output-674278285", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-674278285" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-674278285">
+Create Campaign with valid details<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>Campaign.CampaignFunctionalTest@51891008</td></tr>
+<tr>
+<td title='dashboard.DashboardNegativeTest.verifyDashboardAfterRefresh()'><b>verifyDashboardAfterRefresh</b><br>Test class: dashboard.DashboardNegativeTest</td>
+<td></td>
+<td>20</td>
+<td>dashboard.DashboardNegativeTest@508dec2b</td></tr>
+<tr>
+<td title='leads.LeadsSmokeTest.verifyLeadsCreatePageNavigation()'><b>verifyLeadsCreatePageNavigation</b><br>Test class: leads.LeadsSmokeTest<br/>
+<a href="#Output-1714893448" onClick='toggleBox("Output-1714893448", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1714893448" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1714893448">
+Smoke - Navigate to Leads and open Create Lead page<br/>
+Leads Create page navigation verified<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>leads.LeadsSmokeTest@46d59067</td></tr>
+<tr>
+<td title='dashboard.DashboardFunctionalTest.verifyDashboardCharts()'><b>verifyDashboardCharts</b><br>Test class: dashboard.DashboardFunctionalTest</td>
+<td></td>
+<td>18</td>
+<td>dashboard.DashboardFunctionalTest@7dc19a70</td></tr>
+</table><p>
+</body>
+</html>

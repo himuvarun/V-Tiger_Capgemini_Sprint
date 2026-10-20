@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Vtiger Negative Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Negative Tests(failed)">
+    <groups>
+      <run>
+        <include name="Negative"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="leads.LeadsNegativeTest">
+        <methods>
+          <include name="verifyLeadWithoutLastName"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- leads.LeadsNegativeTest -->
+      <class name="dashboard.DashboardNegativeTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyRepeatedDashboardRefresh"/>
+        </methods>
+      </class> <!-- dashboard.DashboardNegativeTest -->
+      <class name="Campaign.CampaignNegativeTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyCampaignWithoutName"/>
+        </methods>
+      </class> <!-- Campaign.CampaignNegativeTest -->
+    </classes>
+  </test> <!-- Negative Tests(failed) -->
+</suite> <!-- Failed suite [Vtiger Negative Suite] -->

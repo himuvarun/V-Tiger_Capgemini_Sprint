@@ -1,0 +1,1162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="32" passed="32" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Smoke - Navigate to Leads and open Create Lead page]]>
+    </line>
+    <line>
+      <![CDATA[Leads Create page navigation verified]]>
+    </line>
+    <line>
+      <![CDATA[Expected: Assigned To cannot be none]]>
+    </line>
+    <line>
+      <![CDATA[Actual: Assigned To cannot be none]]>
+    </line>
+    <line>
+      <![CDATA[Negative / EP - Create Lead without mandatory Assigned To]]>
+    </line>
+    <line>
+      <![CDATA[BVA / Functional - Verify minimum First Name value]]>
+    </line>
+    <line>
+      <![CDATA[Minimum First Name boundary verified]]>
+    </line>
+    <line>
+      <![CDATA[Functional / System - Create Lead with all valid details]]>
+    </line>
+    <line>
+      <![CDATA[Lead created successfully with valid details]]>
+    </line>
+    <line>
+      <![CDATA[BVA - Verify Postal Code boundary value]]>
+    </line>
+    <line>
+      <![CDATA[Postal Code boundary scenario verified]]>
+    </line>
+    <line>
+      <![CDATA[Expected: Last Name cannot be empty]]>
+    </line>
+    <line>
+      <![CDATA[Actual: Last Name cannot be empty]]>
+    </line>
+    <line>
+      <![CDATA[Negative / EP - Create Lead without mandatory Last Name]]>
+    </line>
+    <line>
+      <![CDATA[Functional / System - Create Lead with all valid details]]>
+    </line>
+    <line>
+      <![CDATA[System level Lead creation verified]]>
+    </line>
+    <line>
+      <![CDATA[Smoke - Navigate to Campaign Create page]]>
+    </line>
+    <line>
+      <![CDATA[System / Acceptance - Create Lead using second unique valid dataset]]>
+    </line>
+    <line>
+      <![CDATA[Application navigation and Lead creation integration verified]]>
+    </line>
+    <line>
+      <![CDATA[Create Campaign with valid details]]>
+    </line>
+    <line>
+      <![CDATA[System / Acceptance - Create Lead using second unique valid dataset]]>
+    </line>
+    <line>
+      <![CDATA[Second unique Lead creation verified]]>
+    </line>
+    <line>
+      <![CDATA[Expected: Campaign Name cannot be empty]]>
+    </line>
+    <line>
+      <![CDATA[Actual: Campaign Name cannot be empty]]>
+    </line>
+    <line>
+      <![CDATA[Minimum Campaign Name]]>
+    </line>
+    <line>
+      <![CDATA[Create Active Campaign]]>
+    </line>
+    <line>
+      <![CDATA[Create Advertisement Campaign]]>
+    </line>
+    <line>
+      <![CDATA[Campaign navigation and creation integration verified]]>
+    </line>
+    <line>
+      <![CDATA[Minimum Ticket Title accepted successfully]]>
+    </line>
+    <line>
+      <![CDATA[Trouble Ticket created successfully]]>
+    </line>
+    <line>
+      <![CDATA[Smoke - Navigate to Trouble Tickets Create page]]>
+    </line>
+    <line>
+      <![CDATA[Expected: Title cannot be none]]>
+    </line>
+    <line>
+      <![CDATA[Actual: Title cannot be none]]>
+    </line>
+    <line>
+      <![CDATA[Ticket with different category created successfully]]>
+    </line>
+    <line>
+      <![CDATA[High Priority Ticket created successfully]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-10-19T19:39:28 IST" name="Vtiger Parallel Suite" finished-at="2026-10-19T19:45:06 IST" duration-ms="338215">
+    <groups>
+      <group name="Functional">
+        <method signature="CampaignBVATest.verifyMinimumCampaignName()[pri:0, instance:Campaign.CampaignBVATest@4d0d9fe7]" name="verifyMinimumCampaignName" class="Campaign.CampaignBVATest"/>
+        <method signature="CampaignFunctionalTest.verifyCampaignCreationWithValidDetails()[pri:0, instance:Campaign.CampaignFunctionalTest@4c163e3]" name="verifyCampaignCreationWithValidDetails" class="Campaign.CampaignFunctionalTest"/>
+        <method signature="TroubleTicketsBVATest.verifyMinimumTicketTitle()[pri:0, instance:TroubleTickets.TroubleTicketsBVATest@70cf32e3]" name="verifyMinimumTicketTitle" class="TroubleTickets.TroubleTicketsBVATest"/>
+        <method signature="TroubleTicketsFunctionalTest.verifyValidTicketCreation()[pri:0, instance:TroubleTickets.TroubleTicketsFunctionalTest@72bc6553]" name="verifyValidTicketCreation" class="TroubleTickets.TroubleTicketsFunctionalTest"/>
+        <method signature="DashboardFunctionalTest.verifyDashboardCharts()[pri:0, instance:dashboard.DashboardFunctionalTest@65987993]" name="verifyDashboardCharts" class="dashboard.DashboardFunctionalTest"/>
+        <method signature="DashboardFunctionalTest.verifyDashboardTitle()[pri:0, instance:dashboard.DashboardFunctionalTest@65987993]" name="verifyDashboardTitle" class="dashboard.DashboardFunctionalTest"/>
+        <method signature="DashboardFunctionalTest.verifyDashboardURL()[pri:0, instance:dashboard.DashboardFunctionalTest@65987993]" name="verifyDashboardURL" class="dashboard.DashboardFunctionalTest"/>
+        <method signature="DashboardFunctionalTest.verifyDashboardWidgets()[pri:0, instance:dashboard.DashboardFunctionalTest@65987993]" name="verifyDashboardWidgets" class="dashboard.DashboardFunctionalTest"/>
+        <method signature="LeadsBVATest.verifyMinimumFirstNameBoundary()[pri:0, instance:leads.LeadsBVATest@25be7b63]" name="verifyMinimumFirstNameBoundary" class="leads.LeadsBVATest"/>
+        <method signature="LeadsFunctionalTest.verifyLeadCreationWithValidDetails()[pri:0, instance:leads.LeadsFunctionalTest@304bb45b]" name="verifyLeadCreationWithValidDetails" class="leads.LeadsFunctionalTest"/>
+        <method signature="LeadsNegativeTest.verifyLeadWithoutAssignedTo()[pri:0, instance:leads.LeadsNegativeTest@723ca036]" name="verifyLeadWithoutAssignedTo" class="leads.LeadsNegativeTest"/>
+        <method signature="LeadsNegativeTest.verifyLeadWithoutLastName()[pri:0, instance:leads.LeadsNegativeTest@723ca036]" name="verifyLeadWithoutLastName" class="leads.LeadsNegativeTest"/>
+      </group> <!-- Functional -->
+      <group name="Acceptance">
+        <method signature="DashboardIntegrationTest.verifyDashboardEndToEnd()[pri:0, instance:dashboard.DashboardIntegrationTest@4d1bf319]" name="verifyDashboardEndToEnd" class="dashboard.DashboardIntegrationTest"/>
+      </group> <!-- Acceptance -->
+      <group name="Integration">
+        <method signature="CampaignIntegrationTest.verifyCampaignNavigationAndCreationIntegration()[pri:0, instance:Campaign.CampaignIntegrationTest@312aa7c]" name="verifyCampaignNavigationAndCreationIntegration" class="Campaign.CampaignIntegrationTest"/>
+        <method signature="TroubleTicketsIntegrationTest.verifyTicketWithDifferentCategory()[pri:0, instance:TroubleTickets.TroubleTicketsIntegrationTest@4bdeaabb]" name="verifyTicketWithDifferentCategory" class="TroubleTickets.TroubleTicketsIntegrationTest"/>
+        <method signature="DashboardIntegrationTest.verifyDashboardEndToEnd()[pri:0, instance:dashboard.DashboardIntegrationTest@4d1bf319]" name="verifyDashboardEndToEnd" class="dashboard.DashboardIntegrationTest"/>
+        <method signature="DashboardIntegrationTest.verifyDashboardFromAnotherModule()[pri:0, instance:dashboard.DashboardIntegrationTest@4d1bf319]" name="verifyDashboardFromAnotherModule" class="dashboard.DashboardIntegrationTest"/>
+        <method signature="LeadsIntegrationTest.verifyApplicationNavigationIntegratesWithLeadCreation()[pri:0, instance:leads.LeadsIntegrationTest@45d84a20]" name="verifyApplicationNavigationIntegratesWithLeadCreation" class="leads.LeadsIntegrationTest"/>
+      </group> <!-- Integration -->
+      <group name="Negative">
+        <method signature="CampaignNegativeTest.verifyCampaignWithoutName()[pri:0, instance:Campaign.CampaignNegativeTest@4a8355dd]" name="verifyCampaignWithoutName" class="Campaign.CampaignNegativeTest"/>
+        <method signature="TroubleTicketsNegativeTest.verifyTicketWithoutTitle()[pri:0, instance:TroubleTickets.TroubleTicketsNegativeTest@66982506]" name="verifyTicketWithoutTitle" class="TroubleTickets.TroubleTicketsNegativeTest"/>
+        <method signature="DashboardNegativeTest.verifyDashboardAfterRefresh()[pri:0, instance:dashboard.DashboardNegativeTest@71075444]" name="verifyDashboardAfterRefresh" class="dashboard.DashboardNegativeTest"/>
+        <method signature="LeadsBVATest.verifyPostalCodeBoundary()[pri:0, instance:leads.LeadsBVATest@25be7b63]" name="verifyPostalCodeBoundary" class="leads.LeadsBVATest"/>
+        <method signature="LeadsNegativeTest.verifyLeadWithoutAssignedTo()[pri:0, instance:leads.LeadsNegativeTest@723ca036]" name="verifyLeadWithoutAssignedTo" class="leads.LeadsNegativeTest"/>
+        <method signature="LeadsNegativeTest.verifyLeadWithoutLastName()[pri:0, instance:leads.LeadsNegativeTest@723ca036]" name="verifyLeadWithoutLastName" class="leads.LeadsNegativeTest"/>
+      </group> <!-- Negative -->
+      <group name="Smoke">
+        <method signature="CampaignSmokeTest.verifyCampaignPageNavigation()[pri:0, instance:Campaign.CampaignSmokeTest@52f27fbd]" name="verifyCampaignPageNavigation" class="Campaign.CampaignSmokeTest"/>
+        <method signature="TroubleTicketsSmokeTest.verifyTroubleTicketsCreatePage()[pri:0, instance:TroubleTickets.TroubleTicketsSmokeTest@536f2a7e]" name="verifyTroubleTicketsCreatePage" class="TroubleTickets.TroubleTicketsSmokeTest"/>
+        <method signature="DashboardSmokeTest.verifyDashboardNavigation()[pri:0, instance:dashboard.DashboardSmokeTest@6c4906d3]" name="verifyDashboardNavigation" class="dashboard.DashboardSmokeTest"/>
+        <method signature="DashboardSmokeTest.verifyDashboardPageDisplayed()[pri:0, instance:dashboard.DashboardSmokeTest@6c4906d3]" name="verifyDashboardPageDisplayed" class="dashboard.DashboardSmokeTest"/>
+        <method signature="LeadsSmokeTest.verifyLeadsCreatePageNavigation()[pri:0, instance:leads.LeadsSmokeTest@402c4085]" name="verifyLeadsCreatePageNavigation" class="leads.LeadsSmokeTest"/>
+      </group> <!-- Smoke -->
+      <group name="EP">
+        <method signature="CampaignFunctionalTest.verifyCampaignCreationWithValidDetails()[pri:0, instance:Campaign.CampaignFunctionalTest@4c163e3]" name="verifyCampaignCreationWithValidDetails" class="Campaign.CampaignFunctionalTest"/>
+        <method signature="CampaignNegativeTest.verifyCampaignWithoutName()[pri:0, instance:Campaign.CampaignNegativeTest@4a8355dd]" name="verifyCampaignWithoutName" class="Campaign.CampaignNegativeTest"/>
+        <method signature="TroubleTicketsFunctionalTest.verifyValidTicketCreation()[pri:0, instance:TroubleTickets.TroubleTicketsFunctionalTest@72bc6553]" name="verifyValidTicketCreation" class="TroubleTickets.TroubleTicketsFunctionalTest"/>
+        <method signature="TroubleTicketsNegativeTest.verifyTicketWithoutTitle()[pri:0, instance:TroubleTickets.TroubleTicketsNegativeTest@66982506]" name="verifyTicketWithoutTitle" class="TroubleTickets.TroubleTicketsNegativeTest"/>
+        <method signature="LeadsNegativeTest.verifyLeadWithoutAssignedTo()[pri:0, instance:leads.LeadsNegativeTest@723ca036]" name="verifyLeadWithoutAssignedTo" class="leads.LeadsNegativeTest"/>
+        <method signature="LeadsNegativeTest.verifyLeadWithoutLastName()[pri:0, instance:leads.LeadsNegativeTest@723ca036]" name="verifyLeadWithoutLastName" class="leads.LeadsNegativeTest"/>
+      </group> <!-- EP -->
+      <group name="BVA">
+        <method signature="CampaignBVATest.verifyMinimumCampaignName()[pri:0, instance:Campaign.CampaignBVATest@4d0d9fe7]" name="verifyMinimumCampaignName" class="Campaign.CampaignBVATest"/>
+        <method signature="TroubleTicketsBVATest.verifyMinimumTicketTitle()[pri:0, instance:TroubleTickets.TroubleTicketsBVATest@70cf32e3]" name="verifyMinimumTicketTitle" class="TroubleTickets.TroubleTicketsBVATest"/>
+        <method signature="DashboardBVATest.verifyMinimumDashboardWidget()[pri:0, instance:dashboard.DashboardBVATest@4f32a3ad]" name="verifyMinimumDashboardWidget" class="dashboard.DashboardBVATest"/>
+        <method signature="LeadsBVATest.verifyMinimumFirstNameBoundary()[pri:0, instance:leads.LeadsBVATest@25be7b63]" name="verifyMinimumFirstNameBoundary" class="leads.LeadsBVATest"/>
+        <method signature="LeadsBVATest.verifyPostalCodeBoundary()[pri:0, instance:leads.LeadsBVATest@25be7b63]" name="verifyPostalCodeBoundary" class="leads.LeadsBVATest"/>
+      </group> <!-- BVA -->
+      <group name="System">
+        <method signature="CampaignSystemTest.verifyActiveCampaignCreation()[pri:0, instance:Campaign.CampaignSystemTest@c430e6c]" name="verifyActiveCampaignCreation" class="Campaign.CampaignSystemTest"/>
+        <method signature="TroubleTicketsSystemTest.verifyHighPriorityTicket()[pri:0, instance:TroubleTickets.TroubleTicketsSystemTest@5a59ca5e]" name="verifyHighPriorityTicket" class="TroubleTickets.TroubleTicketsSystemTest"/>
+        <method signature="DashboardSystemTest.verifyDashboardScrollToBottom()[pri:0, instance:dashboard.DashboardSystemTest@6b695b06]" name="verifyDashboardScrollToBottom" class="dashboard.DashboardSystemTest"/>
+        <method signature="LeadsSystemTest.verifyCompleteLeadCreationFlow()[pri:0, instance:leads.LeadsSystemTest@28dcca0c]" name="verifyCompleteLeadCreationFlow" class="leads.LeadsSystemTest"/>
+        <method signature="LeadsSystemTest.verifySecondUniqueLeadCreation()[pri:0, instance:leads.LeadsSystemTest@28dcca0c]" name="verifySecondUniqueLeadCreation" class="leads.LeadsSystemTest"/>
+      </group> <!-- System -->
+    </groups>
+    <test started-at="2026-10-19T19:39:28 IST" name="All Parallel Tests" finished-at="2026-10-19T19:45:06 IST" duration-ms="338215">
+      <class name="Campaign.CampaignSmokeTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Campaign.CampaignSmokeTest@52f27fbd]" started-at="2026-10-19T19:40:44 IST" name="setUp" finished-at="2026-10-19T19:41:12 IST" duration-ms="27526" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyCampaignPageNavigation()[pri:0, instance:Campaign.CampaignSmokeTest@52f27fbd]" started-at="2026-10-19T19:41:12 IST" name="verifyCampaignPageNavigation" finished-at="2026-10-19T19:41:16 IST" duration-ms="4095" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Smoke - Navigate to Campaign Create page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyCampaignPageNavigation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Campaign.CampaignSmokeTest@52f27fbd]" started-at="2026-10-19T19:41:16 IST" name="tearDown" finished-at="2026-10-19T19:41:16 IST" duration-ms="166" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCampaignPageNavigation status=SUCCESS method=CampaignSmokeTest.verifyCampaignPageNavigation()[pri:0, instance:Campaign.CampaignSmokeTest@52f27fbd] output=Smoke - Navigate to Campaign Create page]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Campaign.CampaignSmokeTest -->
+      <class name="leads.LeadsBVATest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:leads.LeadsBVATest@25be7b63]" started-at="2026-10-19T19:39:28 IST" name="setUp" finished-at="2026-10-19T19:40:02 IST" duration-ms="34330" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyMinimumFirstNameBoundary()[pri:0, instance:leads.LeadsBVATest@25be7b63]" started-at="2026-10-19T19:40:02 IST" name="verifyMinimumFirstNameBoundary" finished-at="2026-10-19T19:40:08 IST" duration-ms="5913" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[BVA / Functional - Verify minimum First Name value]]>
+            </line>
+            <line>
+              <![CDATA[Minimum First Name boundary verified]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyMinimumFirstNameBoundary -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:leads.LeadsBVATest@25be7b63]" started-at="2026-10-19T19:40:08 IST" name="tearDown" finished-at="2026-10-19T19:40:09 IST" duration-ms="353" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyMinimumFirstNameBoundary status=SUCCESS method=LeadsBVATest.verifyMinimumFirstNameBoundary()[pri:0, instance:leads.LeadsBVATest@25be7b63] output=BVA / Functional - Verify minimum First Name value]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:leads.LeadsBVATest@25be7b63]" started-at="2026-10-19T19:40:09 IST" name="setUp" finished-at="2026-10-19T19:40:40 IST" duration-ms="31612" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyPostalCodeBoundary()[pri:0, instance:leads.LeadsBVATest@25be7b63]" started-at="2026-10-19T19:40:40 IST" name="verifyPostalCodeBoundary" finished-at="2026-10-19T19:40:44 IST" duration-ms="3805" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[BVA - Verify Postal Code boundary value]]>
+            </line>
+            <line>
+              <![CDATA[Postal Code boundary scenario verified]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyPostalCodeBoundary -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:leads.LeadsBVATest@25be7b63]" started-at="2026-10-19T19:40:44 IST" name="tearDown" finished-at="2026-10-19T19:40:44 IST" duration-ms="405" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyPostalCodeBoundary status=SUCCESS method=LeadsBVATest.verifyPostalCodeBoundary()[pri:0, instance:leads.LeadsBVATest@25be7b63] output=BVA - Verify Postal Code boundary value]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- leads.LeadsBVATest -->
+      <class name="dashboard.DashboardBVATest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:dashboard.DashboardBVATest@4f32a3ad]" started-at="2026-10-19T19:43:13 IST" name="setUp" finished-at="2026-10-19T19:43:41 IST" duration-ms="27487" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyMinimumDashboardWidget()[pri:0, instance:dashboard.DashboardBVATest@4f32a3ad]" started-at="2026-10-19T19:43:41 IST" name="verifyMinimumDashboardWidget" finished-at="2026-10-19T19:43:46 IST" duration-ms="5008" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMinimumDashboardWidget -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:dashboard.DashboardBVATest@4f32a3ad]" started-at="2026-10-19T19:43:46 IST" name="tearDown" finished-at="2026-10-19T19:43:46 IST" duration-ms="283" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyMinimumDashboardWidget status=SUCCESS method=DashboardBVATest.verifyMinimumDashboardWidget()[pri:0, instance:dashboard.DashboardBVATest@4f32a3ad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- dashboard.DashboardBVATest -->
+      <class name="TroubleTickets.TroubleTicketsSystemTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:TroubleTickets.TroubleTicketsSystemTest@5a59ca5e]" started-at="2026-10-19T19:42:38 IST" name="setUp" finished-at="2026-10-19T19:43:06 IST" duration-ms="28132" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyHighPriorityTicket()[pri:0, instance:TroubleTickets.TroubleTicketsSystemTest@5a59ca5e]" started-at="2026-10-19T19:43:06 IST" name="verifyHighPriorityTicket" finished-at="2026-10-19T19:43:13 IST" duration-ms="6983" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[High Priority Ticket created successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyHighPriorityTicket -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:TroubleTickets.TroubleTicketsSystemTest@5a59ca5e]" started-at="2026-10-19T19:43:13 IST" name="tearDown" finished-at="2026-10-19T19:43:13 IST" duration-ms="265" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHighPriorityTicket status=SUCCESS method=TroubleTicketsSystemTest.verifyHighPriorityTicket()[pri:0, instance:TroubleTickets.TroubleTicketsSystemTest@5a59ca5e] output=High Priority Ticket created successfully]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TroubleTickets.TroubleTicketsSystemTest -->
+      <class name="Campaign.CampaignNegativeTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Campaign.CampaignNegativeTest@4a8355dd]" started-at="2026-10-19T19:41:16 IST" name="setUp" finished-at="2026-10-19T19:41:51 IST" duration-ms="34884" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyCampaignWithoutName()[pri:0, instance:Campaign.CampaignNegativeTest@4a8355dd]" started-at="2026-10-19T19:41:51 IST" name="verifyCampaignWithoutName" finished-at="2026-10-19T19:41:54 IST" duration-ms="3222" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Expected: Campaign Name cannot be empty]]>
+            </line>
+            <line>
+              <![CDATA[Actual: Campaign Name cannot be empty]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyCampaignWithoutName -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Campaign.CampaignNegativeTest@4a8355dd]" started-at="2026-10-19T19:41:54 IST" name="tearDown" finished-at="2026-10-19T19:41:55 IST" duration-ms="371" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCampaignWithoutName status=SUCCESS method=CampaignNegativeTest.verifyCampaignWithoutName()[pri:0, instance:Campaign.CampaignNegativeTest@4a8355dd] output=Expected: Campaign Name cannot be empty]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Campaign.CampaignNegativeTest -->
+      <class name="TroubleTickets.TroubleTicketsNegativeTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:TroubleTickets.TroubleTicketsNegativeTest@66982506]" started-at="2026-10-19T19:42:00 IST" name="setUp" finished-at="2026-10-19T19:42:50 IST" duration-ms="49110" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyTicketWithoutTitle()[pri:0, instance:TroubleTickets.TroubleTicketsNegativeTest@66982506]" started-at="2026-10-19T19:42:50 IST" name="verifyTicketWithoutTitle" finished-at="2026-10-19T19:42:55 IST" duration-ms="5513" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Expected: Title cannot be none]]>
+            </line>
+            <line>
+              <![CDATA[Actual: Title cannot be none]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyTicketWithoutTitle -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:TroubleTickets.TroubleTicketsNegativeTest@66982506]" started-at="2026-10-19T19:42:55 IST" name="tearDown" finished-at="2026-10-19T19:42:56 IST" duration-ms="654" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTicketWithoutTitle status=SUCCESS method=TroubleTicketsNegativeTest.verifyTicketWithoutTitle()[pri:0, instance:TroubleTickets.TroubleTicketsNegativeTest@66982506] output=Expected: Title cannot be none]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TroubleTickets.TroubleTicketsNegativeTest -->
+      <class name="leads.LeadsFunctionalTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:leads.LeadsFunctionalTest@304bb45b]" started-at="2026-10-19T19:39:28 IST" name="setUp" finished-at="2026-10-19T19:40:05 IST" duration-ms="37200" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLeadCreationWithValidDetails()[pri:0, instance:leads.LeadsFunctionalTest@304bb45b]" started-at="2026-10-19T19:40:05 IST" name="verifyLeadCreationWithValidDetails" finished-at="2026-10-19T19:40:12 IST" duration-ms="6515" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Functional / System - Create Lead with all valid details]]>
+            </line>
+            <line>
+              <![CDATA[Lead created successfully with valid details]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLeadCreationWithValidDetails -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:leads.LeadsFunctionalTest@304bb45b]" started-at="2026-10-19T19:40:12 IST" name="tearDown" finished-at="2026-10-19T19:40:12 IST" duration-ms="165" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLeadCreationWithValidDetails status=SUCCESS method=LeadsFunctionalTest.verifyLeadCreationWithValidDetails()[pri:0, instance:leads.LeadsFunctionalTest@304bb45b] output=Functional / System - Create Lead with all valid details]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- leads.LeadsFunctionalTest -->
+      <class name="dashboard.DashboardFunctionalTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:dashboard.DashboardFunctionalTest@65987993]" started-at="2026-10-19T19:42:56 IST" name="setUp" finished-at="2026-10-19T19:43:32 IST" duration-ms="36685" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyDashboardCharts()[pri:0, instance:dashboard.DashboardFunctionalTest@65987993]" started-at="2026-10-19T19:43:32 IST" name="verifyDashboardCharts" finished-at="2026-10-19T19:43:35 IST" duration-ms="3092" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDashboardCharts -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:dashboard.DashboardFunctionalTest@65987993]" started-at="2026-10-19T19:43:35 IST" name="tearDown" finished-at="2026-10-19T19:43:36 IST" duration-ms="254" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDashboardCharts status=SUCCESS method=DashboardFunctionalTest.verifyDashboardCharts()[pri:0, instance:dashboard.DashboardFunctionalTest@65987993] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:dashboard.DashboardFunctionalTest@65987993]" started-at="2026-10-19T19:43:36 IST" name="setUp" finished-at="2026-10-19T19:44:03 IST" duration-ms="26998" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyDashboardTitle()[pri:0, instance:dashboard.DashboardFunctionalTest@65987993]" started-at="2026-10-19T19:44:03 IST" name="verifyDashboardTitle" finished-at="2026-10-19T19:44:05 IST" duration-ms="2519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDashboardTitle -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:dashboard.DashboardFunctionalTest@65987993]" started-at="2026-10-19T19:44:05 IST" name="tearDown" finished-at="2026-10-19T19:44:06 IST" duration-ms="274" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDashboardTitle status=SUCCESS method=DashboardFunctionalTest.verifyDashboardTitle()[pri:0, instance:dashboard.DashboardFunctionalTest@65987993] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:dashboard.DashboardFunctionalTest@65987993]" started-at="2026-10-19T19:44:06 IST" name="setUp" finished-at="2026-10-19T19:44:29 IST" duration-ms="23344" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyDashboardURL()[pri:0, instance:dashboard.DashboardFunctionalTest@65987993]" started-at="2026-10-19T19:44:29 IST" name="verifyDashboardURL" finished-at="2026-10-19T19:44:30 IST" duration-ms="1560" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDashboardURL -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:dashboard.DashboardFunctionalTest@65987993]" started-at="2026-10-19T19:44:30 IST" name="tearDown" finished-at="2026-10-19T19:44:31 IST" duration-ms="227" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDashboardURL status=SUCCESS method=DashboardFunctionalTest.verifyDashboardURL()[pri:0, instance:dashboard.DashboardFunctionalTest@65987993] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:dashboard.DashboardFunctionalTest@65987993]" started-at="2026-10-19T19:44:31 IST" name="setUp" finished-at="2026-10-19T19:45:04 IST" duration-ms="32889" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyDashboardWidgets()[pri:0, instance:dashboard.DashboardFunctionalTest@65987993]" started-at="2026-10-19T19:45:04 IST" name="verifyDashboardWidgets" finished-at="2026-10-19T19:45:06 IST" duration-ms="2398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDashboardWidgets -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:dashboard.DashboardFunctionalTest@65987993]" started-at="2026-10-19T19:45:06 IST" name="tearDown" finished-at="2026-10-19T19:45:06 IST" duration-ms="169" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDashboardWidgets status=SUCCESS method=DashboardFunctionalTest.verifyDashboardWidgets()[pri:0, instance:dashboard.DashboardFunctionalTest@65987993] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- dashboard.DashboardFunctionalTest -->
+      <class name="dashboard.DashboardSystemTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:dashboard.DashboardSystemTest@6b695b06]" started-at="2026-10-19T19:43:41 IST" name="setUp" finished-at="2026-10-19T19:44:05 IST" duration-ms="23923" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyDashboardScrollToBottom()[pri:0, instance:dashboard.DashboardSystemTest@6b695b06]" started-at="2026-10-19T19:44:05 IST" name="verifyDashboardScrollToBottom" finished-at="2026-10-19T19:44:07 IST" duration-ms="2046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDashboardScrollToBottom -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:dashboard.DashboardSystemTest@6b695b06]" started-at="2026-10-19T19:44:07 IST" name="tearDown" finished-at="2026-10-19T19:44:08 IST" duration-ms="261" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDashboardScrollToBottom status=SUCCESS method=DashboardSystemTest.verifyDashboardScrollToBottom()[pri:0, instance:dashboard.DashboardSystemTest@6b695b06] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- dashboard.DashboardSystemTest -->
+      <class name="TroubleTickets.TroubleTicketsIntegrationTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:TroubleTickets.TroubleTicketsIntegrationTest@4bdeaabb]" started-at="2026-10-19T19:42:40 IST" name="setUp" finished-at="2026-10-19T19:43:05 IST" duration-ms="24955" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyTicketWithDifferentCategory()[pri:0, instance:TroubleTickets.TroubleTicketsIntegrationTest@4bdeaabb]" started-at="2026-10-19T19:43:05 IST" name="verifyTicketWithDifferentCategory" finished-at="2026-10-19T19:43:12 IST" duration-ms="7312" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Ticket with different category created successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyTicketWithDifferentCategory -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:TroubleTickets.TroubleTicketsIntegrationTest@4bdeaabb]" started-at="2026-10-19T19:43:12 IST" name="tearDown" finished-at="2026-10-19T19:43:13 IST" duration-ms="287" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTicketWithDifferentCategory status=SUCCESS method=TroubleTicketsIntegrationTest.verifyTicketWithDifferentCategory()[pri:0, instance:TroubleTickets.TroubleTicketsIntegrationTest@4bdeaabb] output=Ticket with different category created successfully]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TroubleTickets.TroubleTicketsIntegrationTest -->
+      <class name="TroubleTickets.TroubleTicketsSmokeTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:TroubleTickets.TroubleTicketsSmokeTest@536f2a7e]" started-at="2026-10-19T19:41:55 IST" name="setUp" finished-at="2026-10-19T19:42:40 IST" duration-ms="45072" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyTroubleTicketsCreatePage()[pri:0, instance:TroubleTickets.TroubleTicketsSmokeTest@536f2a7e]" started-at="2026-10-19T19:42:40 IST" name="verifyTroubleTicketsCreatePage" finished-at="2026-10-19T19:42:43 IST" duration-ms="2850" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Smoke - Navigate to Trouble Tickets Create page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyTroubleTicketsCreatePage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:TroubleTickets.TroubleTicketsSmokeTest@536f2a7e]" started-at="2026-10-19T19:42:43 IST" name="tearDown" finished-at="2026-10-19T19:42:43 IST" duration-ms="253" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTroubleTicketsCreatePage status=SUCCESS method=TroubleTicketsSmokeTest.verifyTroubleTicketsCreatePage()[pri:0, instance:TroubleTickets.TroubleTicketsSmokeTest@536f2a7e] output=Smoke - Navigate to Trouble Tickets Create page]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TroubleTickets.TroubleTicketsSmokeTest -->
+      <class name="TroubleTickets.TroubleTicketsBVATest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:TroubleTickets.TroubleTicketsBVATest@70cf32e3]" started-at="2026-10-19T19:42:05 IST" name="setUp" finished-at="2026-10-19T19:42:28 IST" duration-ms="22933" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyMinimumTicketTitle()[pri:0, instance:TroubleTickets.TroubleTicketsBVATest@70cf32e3]" started-at="2026-10-19T19:42:28 IST" name="verifyMinimumTicketTitle" finished-at="2026-10-19T19:42:38 IST" duration-ms="9713" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Minimum Ticket Title accepted successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyMinimumTicketTitle -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:TroubleTickets.TroubleTicketsBVATest@70cf32e3]" started-at="2026-10-19T19:42:38 IST" name="tearDown" finished-at="2026-10-19T19:42:38 IST" duration-ms="354" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyMinimumTicketTitle status=SUCCESS method=TroubleTicketsBVATest.verifyMinimumTicketTitle()[pri:0, instance:TroubleTickets.TroubleTicketsBVATest@70cf32e3] output=Minimum Ticket Title accepted successfully]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TroubleTickets.TroubleTicketsBVATest -->
+      <class name="dashboard.DashboardNegativeTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:dashboard.DashboardNegativeTest@71075444]" started-at="2026-10-19T19:43:13 IST" name="setUp" finished-at="2026-10-19T19:43:37 IST" duration-ms="24253" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyDashboardAfterRefresh()[pri:0, instance:dashboard.DashboardNegativeTest@71075444]" started-at="2026-10-19T19:43:37 IST" name="verifyDashboardAfterRefresh" finished-at="2026-10-19T19:43:41 IST" duration-ms="3771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDashboardAfterRefresh -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:dashboard.DashboardNegativeTest@71075444]" started-at="2026-10-19T19:43:41 IST" name="tearDown" finished-at="2026-10-19T19:43:41 IST" duration-ms="717" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDashboardAfterRefresh status=SUCCESS method=DashboardNegativeTest.verifyDashboardAfterRefresh()[pri:0, instance:dashboard.DashboardNegativeTest@71075444] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- dashboard.DashboardNegativeTest -->
+      <class name="leads.LeadsNegativeTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:leads.LeadsNegativeTest@723ca036]" started-at="2026-10-19T19:39:28 IST" name="setUp" finished-at="2026-10-19T19:40:01 IST" duration-ms="32967" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLeadWithoutAssignedTo()[pri:0, instance:leads.LeadsNegativeTest@723ca036]" started-at="2026-10-19T19:40:01 IST" name="verifyLeadWithoutAssignedTo" finished-at="2026-10-19T19:40:08 IST" duration-ms="7017" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Expected: Assigned To cannot be none]]>
+            </line>
+            <line>
+              <![CDATA[Actual: Assigned To cannot be none]]>
+            </line>
+            <line>
+              <![CDATA[Negative / EP - Create Lead without mandatory Assigned To]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLeadWithoutAssignedTo -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:leads.LeadsNegativeTest@723ca036]" started-at="2026-10-19T19:40:08 IST" name="tearDown" finished-at="2026-10-19T19:40:09 IST" duration-ms="689" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLeadWithoutAssignedTo status=SUCCESS method=LeadsNegativeTest.verifyLeadWithoutAssignedTo()[pri:0, instance:leads.LeadsNegativeTest@723ca036] output=Expected: Assigned To cannot be none]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:leads.LeadsNegativeTest@723ca036]" started-at="2026-10-19T19:40:09 IST" name="setUp" finished-at="2026-10-19T19:40:41 IST" duration-ms="32336" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLeadWithoutLastName()[pri:0, instance:leads.LeadsNegativeTest@723ca036]" started-at="2026-10-19T19:40:41 IST" name="verifyLeadWithoutLastName" finished-at="2026-10-19T19:40:44 IST" duration-ms="3519" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Expected: Last Name cannot be empty]]>
+            </line>
+            <line>
+              <![CDATA[Actual: Last Name cannot be empty]]>
+            </line>
+            <line>
+              <![CDATA[Negative / EP - Create Lead without mandatory Last Name]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLeadWithoutLastName -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:leads.LeadsNegativeTest@723ca036]" started-at="2026-10-19T19:40:44 IST" name="tearDown" finished-at="2026-10-19T19:40:45 IST" duration-ms="353" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLeadWithoutLastName status=SUCCESS method=LeadsNegativeTest.verifyLeadWithoutLastName()[pri:0, instance:leads.LeadsNegativeTest@723ca036] output=Expected: Last Name cannot be empty]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- leads.LeadsNegativeTest -->
+      <class name="Campaign.CampaignIntegrationTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Campaign.CampaignIntegrationTest@312aa7c]" started-at="2026-10-19T19:41:36 IST" name="setUp" finished-at="2026-10-19T19:41:58 IST" duration-ms="22679" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyCampaignNavigationAndCreationIntegration()[pri:0, instance:Campaign.CampaignIntegrationTest@312aa7c]" started-at="2026-10-19T19:41:58 IST" name="verifyCampaignNavigationAndCreationIntegration" finished-at="2026-10-19T19:42:05 IST" duration-ms="6233" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Create Advertisement Campaign]]>
+            </line>
+            <line>
+              <![CDATA[Campaign navigation and creation integration verified]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyCampaignNavigationAndCreationIntegration -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Campaign.CampaignIntegrationTest@312aa7c]" started-at="2026-10-19T19:42:05 IST" name="tearDown" finished-at="2026-10-19T19:42:05 IST" duration-ms="275" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCampaignNavigationAndCreationIntegration status=SUCCESS method=CampaignIntegrationTest.verifyCampaignNavigationAndCreationIntegration()[pri:0, instance:Campaign.CampaignIntegrationTest@312aa7c] output=Create Advertisement Campaign]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Campaign.CampaignIntegrationTest -->
+      <class name="leads.LeadsSmokeTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:leads.LeadsSmokeTest@402c4085]" started-at="2026-10-19T19:39:28 IST" name="setUp" finished-at="2026-10-19T19:39:59 IST" duration-ms="31346" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLeadsCreatePageNavigation()[pri:0, instance:leads.LeadsSmokeTest@402c4085]" started-at="2026-10-19T19:39:59 IST" name="verifyLeadsCreatePageNavigation" finished-at="2026-10-19T19:40:07 IST" duration-ms="7483" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Smoke - Navigate to Leads and open Create Lead page]]>
+            </line>
+            <line>
+              <![CDATA[Leads Create page navigation verified]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyLeadsCreatePageNavigation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:leads.LeadsSmokeTest@402c4085]" started-at="2026-10-19T19:40:07 IST" name="tearDown" finished-at="2026-10-19T19:40:07 IST" duration-ms="186" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLeadsCreatePageNavigation status=SUCCESS method=LeadsSmokeTest.verifyLeadsCreatePageNavigation()[pri:0, instance:leads.LeadsSmokeTest@402c4085] output=Smoke - Navigate to Leads and open Create Lead page]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- leads.LeadsSmokeTest -->
+      <class name="dashboard.DashboardIntegrationTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:dashboard.DashboardIntegrationTest@4d1bf319]" started-at="2026-10-19T19:43:45 IST" name="setUp" finished-at="2026-10-19T19:44:10 IST" duration-ms="25612" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyDashboardEndToEnd()[pri:0, instance:dashboard.DashboardIntegrationTest@4d1bf319]" started-at="2026-10-19T19:44:10 IST" name="verifyDashboardEndToEnd" finished-at="2026-10-19T19:44:13 IST" duration-ms="3212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDashboardEndToEnd -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:dashboard.DashboardIntegrationTest@4d1bf319]" started-at="2026-10-19T19:44:13 IST" name="tearDown" finished-at="2026-10-19T19:44:14 IST" duration-ms="239" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDashboardEndToEnd status=SUCCESS method=DashboardIntegrationTest.verifyDashboardEndToEnd()[pri:0, instance:dashboard.DashboardIntegrationTest@4d1bf319] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:dashboard.DashboardIntegrationTest@4d1bf319]" started-at="2026-10-19T19:44:14 IST" name="setUp" finished-at="2026-10-19T19:44:37 IST" duration-ms="23188" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyDashboardFromAnotherModule()[pri:0, instance:dashboard.DashboardIntegrationTest@4d1bf319]" started-at="2026-10-19T19:44:37 IST" name="verifyDashboardFromAnotherModule" finished-at="2026-10-19T19:44:38 IST" duration-ms="1409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDashboardFromAnotherModule -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:dashboard.DashboardIntegrationTest@4d1bf319]" started-at="2026-10-19T19:44:38 IST" name="tearDown" finished-at="2026-10-19T19:44:38 IST" duration-ms="252" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDashboardFromAnotherModule status=SUCCESS method=DashboardIntegrationTest.verifyDashboardFromAnotherModule()[pri:0, instance:dashboard.DashboardIntegrationTest@4d1bf319] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- dashboard.DashboardIntegrationTest -->
+      <class name="Campaign.CampaignFunctionalTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Campaign.CampaignFunctionalTest@4c163e3]" started-at="2026-10-19T19:40:45 IST" name="setUp" finished-at="2026-10-19T19:41:19 IST" duration-ms="33826" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyCampaignCreationWithValidDetails()[pri:0, instance:Campaign.CampaignFunctionalTest@4c163e3]" started-at="2026-10-19T19:41:19 IST" name="verifyCampaignCreationWithValidDetails" finished-at="2026-10-19T19:41:31 IST" duration-ms="12182" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Create Campaign with valid details]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyCampaignCreationWithValidDetails -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Campaign.CampaignFunctionalTest@4c163e3]" started-at="2026-10-19T19:41:31 IST" name="tearDown" finished-at="2026-10-19T19:41:31 IST" duration-ms="135" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCampaignCreationWithValidDetails status=SUCCESS method=CampaignFunctionalTest.verifyCampaignCreationWithValidDetails()[pri:0, instance:Campaign.CampaignFunctionalTest@4c163e3] output=Create Campaign with valid details]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Campaign.CampaignFunctionalTest -->
+      <class name="leads.LeadsIntegrationTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:leads.LeadsIntegrationTest@45d84a20]" started-at="2026-10-19T19:40:12 IST" name="setUp" finished-at="2026-10-19T19:41:08 IST" duration-ms="55843" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyApplicationNavigationIntegratesWithLeadCreation()[pri:0, instance:leads.LeadsIntegrationTest@45d84a20]" started-at="2026-10-19T19:41:08 IST" name="verifyApplicationNavigationIntegratesWithLeadCreation" finished-at="2026-10-19T19:41:18 IST" duration-ms="10696" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[System / Acceptance - Create Lead using second unique valid dataset]]>
+            </line>
+            <line>
+              <![CDATA[Application navigation and Lead creation integration verified]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyApplicationNavigationIntegratesWithLeadCreation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:leads.LeadsIntegrationTest@45d84a20]" started-at="2026-10-19T19:41:18 IST" name="tearDown" finished-at="2026-10-19T19:41:19 IST" duration-ms="151" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyApplicationNavigationIntegratesWithLeadCreation status=SUCCESS method=LeadsIntegrationTest.verifyApplicationNavigationIntegratesWithLeadCreation()[pri:0, instance:leads.LeadsIntegrationTest@45d84a20] output=System / Acceptance - Create Lead using second unique valid dataset]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- leads.LeadsIntegrationTest -->
+      <class name="dashboard.DashboardSmokeTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:dashboard.DashboardSmokeTest@6c4906d3]" started-at="2026-10-19T19:42:43 IST" name="setUp" finished-at="2026-10-19T19:43:08 IST" duration-ms="25060" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyDashboardNavigation()[pri:0, instance:dashboard.DashboardSmokeTest@6c4906d3]" started-at="2026-10-19T19:43:08 IST" name="verifyDashboardNavigation" finished-at="2026-10-19T19:43:10 IST" duration-ms="2003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDashboardNavigation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:dashboard.DashboardSmokeTest@6c4906d3]" started-at="2026-10-19T19:43:10 IST" name="tearDown" finished-at="2026-10-19T19:43:10 IST" duration-ms="307" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDashboardNavigation status=SUCCESS method=DashboardSmokeTest.verifyDashboardNavigation()[pri:0, instance:dashboard.DashboardSmokeTest@6c4906d3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:dashboard.DashboardSmokeTest@6c4906d3]" started-at="2026-10-19T19:43:10 IST" name="setUp" finished-at="2026-10-19T19:43:41 IST" duration-ms="30517" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyDashboardPageDisplayed()[pri:0, instance:dashboard.DashboardSmokeTest@6c4906d3]" started-at="2026-10-19T19:43:41 IST" name="verifyDashboardPageDisplayed" finished-at="2026-10-19T19:43:44 IST" duration-ms="3579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDashboardPageDisplayed -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:dashboard.DashboardSmokeTest@6c4906d3]" started-at="2026-10-19T19:43:44 IST" name="tearDown" finished-at="2026-10-19T19:43:45 IST" duration-ms="241" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDashboardPageDisplayed status=SUCCESS method=DashboardSmokeTest.verifyDashboardPageDisplayed()[pri:0, instance:dashboard.DashboardSmokeTest@6c4906d3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- dashboard.DashboardSmokeTest -->
+      <class name="Campaign.CampaignSystemTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Campaign.CampaignSystemTest@c430e6c]" started-at="2026-10-19T19:41:31 IST" name="setUp" finished-at="2026-10-19T19:41:54 IST" duration-ms="22545" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyActiveCampaignCreation()[pri:0, instance:Campaign.CampaignSystemTest@c430e6c]" started-at="2026-10-19T19:41:54 IST" name="verifyActiveCampaignCreation" finished-at="2026-10-19T19:42:00 IST" duration-ms="6499" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Create Active Campaign]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyActiveCampaignCreation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Campaign.CampaignSystemTest@c430e6c]" started-at="2026-10-19T19:42:00 IST" name="tearDown" finished-at="2026-10-19T19:42:00 IST" duration-ms="370" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyActiveCampaignCreation status=SUCCESS method=CampaignSystemTest.verifyActiveCampaignCreation()[pri:0, instance:Campaign.CampaignSystemTest@c430e6c] output=Create Active Campaign]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Campaign.CampaignSystemTest -->
+      <class name="Campaign.CampaignBVATest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Campaign.CampaignBVATest@4d0d9fe7]" started-at="2026-10-19T19:41:19 IST" name="setUp" finished-at="2026-10-19T19:41:52 IST" duration-ms="33291" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyMinimumCampaignName()[pri:0, instance:Campaign.CampaignBVATest@4d0d9fe7]" started-at="2026-10-19T19:41:52 IST" name="verifyMinimumCampaignName" finished-at="2026-10-19T19:41:58 IST" duration-ms="6306" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Minimum Campaign Name]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyMinimumCampaignName -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Campaign.CampaignBVATest@4d0d9fe7]" started-at="2026-10-19T19:41:58 IST" name="tearDown" finished-at="2026-10-19T19:41:59 IST" duration-ms="552" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyMinimumCampaignName status=SUCCESS method=CampaignBVATest.verifyMinimumCampaignName()[pri:0, instance:Campaign.CampaignBVATest@4d0d9fe7] output=Minimum Campaign Name]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Campaign.CampaignBVATest -->
+      <class name="TroubleTickets.TroubleTicketsFunctionalTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:TroubleTickets.TroubleTicketsFunctionalTest@72bc6553]" started-at="2026-10-19T19:41:59 IST" name="setUp" finished-at="2026-10-19T19:42:34 IST" duration-ms="34906" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyValidTicketCreation()[pri:0, instance:TroubleTickets.TroubleTicketsFunctionalTest@72bc6553]" started-at="2026-10-19T19:42:34 IST" name="verifyValidTicketCreation" finished-at="2026-10-19T19:42:40 IST" duration-ms="6132" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Trouble Ticket created successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyValidTicketCreation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:TroubleTickets.TroubleTicketsFunctionalTest@72bc6553]" started-at="2026-10-19T19:42:40 IST" name="tearDown" finished-at="2026-10-19T19:42:40 IST" duration-ms="336" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyValidTicketCreation status=SUCCESS method=TroubleTicketsFunctionalTest.verifyValidTicketCreation()[pri:0, instance:TroubleTickets.TroubleTicketsFunctionalTest@72bc6553] output=Trouble Ticket created successfully]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TroubleTickets.TroubleTicketsFunctionalTest -->
+      <class name="leads.LeadsSystemTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:leads.LeadsSystemTest@28dcca0c]" started-at="2026-10-19T19:40:07 IST" name="setUp" finished-at="2026-10-19T19:40:40 IST" duration-ms="33154" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyCompleteLeadCreationFlow()[pri:0, instance:leads.LeadsSystemTest@28dcca0c]" started-at="2026-10-19T19:40:40 IST" name="verifyCompleteLeadCreationFlow" finished-at="2026-10-19T19:40:46 IST" duration-ms="6027" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Functional / System - Create Lead with all valid details]]>
+            </line>
+            <line>
+              <![CDATA[System level Lead creation verified]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyCompleteLeadCreationFlow -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:leads.LeadsSystemTest@28dcca0c]" started-at="2026-10-19T19:40:46 IST" name="tearDown" finished-at="2026-10-19T19:40:46 IST" duration-ms="161" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCompleteLeadCreationFlow status=SUCCESS method=LeadsSystemTest.verifyCompleteLeadCreationFlow()[pri:0, instance:leads.LeadsSystemTest@28dcca0c] output=Functional / System - Create Lead with all valid details]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:leads.LeadsSystemTest@28dcca0c]" started-at="2026-10-19T19:40:46 IST" name="setUp" finished-at="2026-10-19T19:41:29 IST" duration-ms="42957" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySecondUniqueLeadCreation()[pri:0, instance:leads.LeadsSystemTest@28dcca0c]" started-at="2026-10-19T19:41:29 IST" name="verifySecondUniqueLeadCreation" finished-at="2026-10-19T19:41:36 IST" duration-ms="6277" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[System / Acceptance - Create Lead using second unique valid dataset]]>
+            </line>
+            <line>
+              <![CDATA[Second unique Lead creation verified]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySecondUniqueLeadCreation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:leads.LeadsSystemTest@28dcca0c]" started-at="2026-10-19T19:41:36 IST" name="tearDown" finished-at="2026-10-19T19:41:36 IST" duration-ms="149" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySecondUniqueLeadCreation status=SUCCESS method=LeadsSystemTest.verifySecondUniqueLeadCreation()[pri:0, instance:leads.LeadsSystemTest@28dcca0c] output=System / Acceptance - Create Lead using second unique valid dataset]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- leads.LeadsSystemTest -->
+    </test> <!-- All Parallel Tests -->
+  </suite> <!-- Vtiger Parallel Suite -->
+</testng-results>
