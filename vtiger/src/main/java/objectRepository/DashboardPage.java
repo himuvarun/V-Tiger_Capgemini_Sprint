@@ -59,7 +59,6 @@ public class DashboardPage {
     }
 
     public boolean isAddWidgetAvailable() {
-
         for (WebElement element : dashboardWidgets) {
             if (element.isDisplayed()) {
                 return true;
@@ -74,26 +73,21 @@ public class DashboardPage {
     }
 
     public int getDashboardWidgetCount() {
-
         int count = 0;
-
         for (WebElement element : dashboardWidgets) {
             if (element.isDisplayed()) {
                 count++;
             }
         }
-
         return count;
     }
 
     public boolean areChartsPresent() {
-
         for (WebElement element : chartElements) {
             if (element.isDisplayed()) {
                 return true;
             }
         }
-
         return false;
     }
 
@@ -114,16 +108,11 @@ public class DashboardPage {
     }
 
     public void waitForDashboardToLoad() {
-
         while (!"complete".equals(
-                ((JavascriptExecutor) driver)
-                        .executeScript("return document.readyState"))) {
+                ((JavascriptExecutor) driver).executeScript("return document.readyState"))) {
         }
-
         if (!driver.getCurrentUrl().contains("module=Dashboard")) {
-            throw new RuntimeException(
-                    "Dashboard page is not loaded"
-            );
+            throw new RuntimeException("Dashboard page is not loaded");
         }
     }
     public void refreshDashboard() {
